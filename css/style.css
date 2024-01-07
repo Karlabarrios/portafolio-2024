@@ -1,0 +1,1069 @@
+/*Typos
+font-family: 'Manrope', sans-serif;
+font-family: 'Martian Mono', monospace;*/
+/*Colores
+Lila claro: #DFBEDD
+Lila fuerte: #C497C4
+Azul: #4165E3*/
+
+/*Generales*/
+h1{
+    font-size: 66px;
+    font-family: 'Martian Mono', monospace;
+    letter-spacing: -3px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+h2{
+    font-size: 54px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+}
+
+h4{
+    font-size: 16px;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 300;
+}
+
+h5{
+    font-family: 'Martian Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Martian Mono', monospace;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+p b{
+    font-weight: 600;
+}
+
+/*Body*/
+body{
+    background-image: url(../imagenes/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*NavBar segunda prueba*/
+nav{
+    background-color: #000000;
+}
+li{
+    list-style: none;
+}
+.navbar ul{
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 17px;
+    font-weight: 500;
+    border-right: white solid 1px;
+    padding-right: 20px;
+}
+
+.navbar .links{
+    display: flex;
+}
+
+.links li{
+    border-right: white solid 1px;
+    padding: 0 20px;
+}
+
+.recursos{
+    border-right: none !important;
+}
+
+.contacto{
+    border-left: white solid 1px;
+    padding-left: 20px;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+/*DropDown menú*/
+.dropdown_menu{
+    display: none;
+    height: 0;
+    position: absolute;
+    left: 0.5rem;
+    width: unset;
+    right: 0.5rem;
+    top: 70px;
+    background-color: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: auto;
+}
+
+.dropdown_menu li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu a{
+    color: #fff;
+}
+
+/*Dropdown menú portafolio*/
+
+/*Header*/
+header{
+    margin: -230px 0 100px;
+}
+
+header b{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+
+header p{
+    font-size: 11px;
+    margin: 0;
+    font-weight: 300;
+    color: #717171;
+}
+
+header a{
+    text-align: center;
+    color: black;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 18px 74px;
+    margin-top: 80px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+}
+
+header a:hover{
+    background-color: black;
+    color: white;
+}
+
+.head-imgs-row{
+    position: relative;
+    top: 410px;
+    right: 100px;
+    z-index: -1000;
+}
+.ojo-2{
+    width: 160px;
+}
+
+.ojo-1{
+    width: 440px;
+}
+
+/*Section 1: Hacerlo es posible*/
+.hacerlo-posible hr{
+    border: solid black -5px !important;
+    opacity: 1;
+}
+
+.en-movimiento{
+    padding: 20px 0;
+}
+
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 13px;
+}
+
+.text{
+    color: #000000;
+}
+
+.marquee div {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 3s linear infinite;
+} 
+
+.marquee div span {
+    flex-shrink: 0;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 300;
+    text-align: center;
+} 
+
+.dot{
+    width: 1.3em;
+    background-image: url("../imagenes/dot-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.marquee span.text {
+    width: 270px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-22em); }
+}
+
+/*Section 2: Quien soy*/
+.quien-soy{
+    padding: 100px 15% 120px 15%;
+}
+
+.quien-soy h3{
+    margin: 60px 0 30px 0;
+}
+
+.vidrio{
+    background-image: url(../imagenes/vidrio-quientres.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.quien-soy p{
+    margin-bottom: 100px;
+}
+
+.quien-soy img{
+    background-color: #4165E3;
+    border-radius: 50%;
+    border: solid black 1px;
+    width: 160px;
+    margin-bottom: 100px;
+    padding: 5px;
+    transform: rotate(0deg);
+    transition: all .5s ease;
+}
+
+.quien-soy img:hover{
+    background-color: #DFBEDD;
+    transform: rotate(180deg) scale(1.1);
+}
+
+/*Section 3: Curriculum*/
+.curriculum a{
+    text-align: center;
+    color: black;
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 18px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    color: black;
+}
+
+.curriculum b{
+    font-weight: 600;
+}
+
+.curri-uno{
+    /*Change images to another ones with less brightness*/
+    background-image: url(../imagenes/curriculum1-remplazo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: end;
+    border-radius: 15px;
+    border: 1px black solid;
+    padding: 80px 8% 120px 0;
+    color: white;
+}
+
+.curri-dos{
+    background-image: url(../imagenes/curriculum2-remplazo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    border-radius: 15px;
+    border: 1px black solid;
+}
+
+.change-filter{
+    filter: saturate(0);
+    transition: all .1s ease;
+}
+
+.change-filter:hover{
+    filter: saturate(1);
+}
+
+.change-filter:hover h3{
+    color: black;
+}
+.change-filter:hover h4{
+    color: black;
+}
+
+.change-filter a{
+    border: solid white 1px !important;
+    color: white;
+}
+
+.change-filter:hover a{
+    background-color: black;
+    border: solid black 1px !important;
+    border: 0px;
+}
+
+.curri-tres{
+    padding: 80px 50px;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px black solid;
+}
+.curri-texto{
+    margin: 40px 0 120px 0;
+}
+
+.curriculum p{
+    text-align: justify;
+}
+
+/*Section 4: Conoce*/
+.conoce h3{
+    margin-bottom: 0 !important;
+}
+
+.conoce hr{
+    border: solid black -5px !important;
+    opacity: 1;
+    margin: 0;
+    width: 66%;
+    display: inline-block;
+}
+
+.centro-conoce{
+    text-align: center;
+    padding: 0 0 !important;
+}
+
+.lado-conoce{
+    padding: 0 0 !important;
+    text-align: center;
+}
+.conoce img{
+    width: 14px;
+}
+
+.punto{
+    display: inline-block;
+    padding: 0 5%;
+}
+
+/*Section 5: Conoce 2*/
+
+/*Contacto*/
+.contactame{
+    padding: 120px 0 30px;
+}
+
+.fondo-contactame{
+    background-color: white;
+    border: solid 1px black;
+    padding: 50px 0px;
+    border-radius: 15px;
+}
+
+.contactame h3{
+    padding-bottom: 40px;
+}
+
+input{
+    font-family: 'Martian Mono', monospace;
+    color: black !important;
+    font-size: 11px !important;
+}
+
+.form-control{
+    border: solid 1px black !important;
+    color: black !important;
+}
+
+button{
+    background-color: black !important;
+    color: white !important;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px !important;
+    border-radius: 12px !important;
+    padding: 12px 50px !important;
+    margin-top: 30px;
+}
+
+/*Section 6: Social media*/
+.social-media{
+    padding: 120px 0 120px 0;
+}
+
+.social-media h3{
+    width: auto;
+}
+
+.social-media b{
+    font-family: 'Martian Mono', monospace;
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.social-media img{
+    border: solid black 1px !important;
+    border-radius: 15px;
+}
+
+.imgs-media{
+    padding: 0 10%;
+}
+
+.social-col{
+    margin-bottom: 80px;
+}
+
+.text-media{
+    padding: 0 10% 66px;
+}
+
+.social-media h4{
+    font-weight: 400;
+    margin-top: 46px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.so-link{
+    margin-top: 30px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    color: black;
+    display: inline-block;
+}
+
+
+/*Footer*/
+footer{
+    padding: 100px 0 50px;
+    background-color: black;
+    color: white;
+}
+
+footer h3{
+    font-size: 53px;
+}
+footer b{
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Martian Mono', monospace;
+}
+
+footer a{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 24px;
+    display: block;
+    font-size: 16px;
+}
+
+footer a:hover{
+    color: #DFBEDD;
+}
+.dos-row{
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+footer img{
+    width: 60px;
+}
+
+.flecha{
+    margin-bottom: 15px;
+}
+
+footer hr{
+    border: solid white -5px !important;
+    opacity: 1;
+    margin: 0;
+}
+
+footer p{
+    margin-top: 35px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+.links-footer{
+    justify-content: end;
+    position: relative;
+    top: -80px;
+}
+
+
+
+/*PORTAFOLIO*/
+/*PORTAFOLIO*/
+/*PORTAFOLIO*/
+/*PORTAFOLIO*/
+
+/*Header*/
+
+/*Logos*/
+.logos{
+    padding: 120px 0;
+}
+
+.logo-img{
+    width: 300px;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.fila-logos{
+    margin: 70px 0 50px;
+}
+
+.ver-todos-logo a{
+    text-align: center;
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 74px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 50px;
+}
+
+/*Branding*/
+.branding{
+    padding: 120px 0 30px;
+}
+
+.branding-1-row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.branding-1-col{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.text-wrapper { 
+    display: flex;
+    justify-content:flex-start;
+    overflow: hidden;
+    width: 100%;
+}
+
+.text-wrapper h3{
+    white-space: nowrap;
+    padding: 0 10rem;
+    letter-spacing: 1px;
+    animation: move-rtl 6000ms linear infinite;
+    text-align: center;
+    opacity: 1 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.color{
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+@keyframes move-rtl{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+}
+
+/*Branding 2*/
+.branding-2{
+    padding-bottom: 120px;
+}
+
+.brand-img{
+    border: solid black 1px !important;
+    border-radius: 15px;
+}
+
+.ver-todos-brand a{
+    text-align: center;
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 74px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 66px;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*//*//////////*/
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES*/
+
+
+/* More than extra large devices (less than 1600px | for the silly rotting bubbles) */
+@media (max-width: 1600px) {
+    /*Generales*/
+    /*Header*/
+    header{
+        margin: -210px 0 100px;
+    }
+
+    .head-imgs-row{
+        top: 390px;
+    }
+
+    .ojo-1{
+        width: 410px;
+    }
+
+    .ojo-2{
+        display: none;
+    }
+}
+
+
+/* Extra large devices (less than 1400px)*/
+/* XXL-BOOTSTRAP*/
+/* XXL-BOOTSTRAP*/
+@media (max-width: 1400px) {
+    /*Generales*/
+    /*Header*/
+    header{
+        margin: -150px 0 100px;
+    }
+
+    .head-imgs-row{
+        top: 350px;
+        right: 70px;
+    }
+
+    .ojo-1{
+        width: 350px;
+    }
+
+    /*Curriculum*/
+    .curri-tres{
+        display: none;
+    }
+
+    .curri-uno{
+        margin-bottom: 20px;
+    }
+
+    .curri-uno{
+        /*Cambiar por imagenes que encajen*/
+        background-image: url(../imagenes/curriculum1-remplazo.jpg);
+    }
+
+    .curri-dos{
+        background-image: url(../imagenes/curriculum2-remplazo.jpg);
+    }
+
+    /*Footer*/
+    footer h3{
+        font-size: 50px;
+    }
+
+    footer b{
+        font-size: 46px;
+    }
+}
+
+
+/* Delete bubble at 1300 */
+@media (max-width: 1300px) {
+    header{
+        margin: 200px 0 100px;
+    }
+
+    .ojo-1{
+        display: none;
+    }
+}
+
+
+/* Large devices (less than 1200px) XL-BOOTSTRAP*/
+/* XL-BOOTSTRAP*/
+/* XL-BOOTSTRAP*/
+@media (max-width: 1200px) {
+    /*Generales*/
+    h3{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    /*Header*/
+    header a{
+        padding: 17px 70px;
+        font-size: 14px;
+    }
+
+    /*Quien soy*/
+    .quien-soy img{
+        width: 150px;
+    }
+
+    /*Conoce*/
+    .lado-conoce{
+        margin-top: 10px;
+    }
+
+    /*Redes sociales*/
+    .social-media br{
+        display: none;
+    }
+
+    .social-media b{
+        font-size: 34px;
+    }
+
+    .social-media h3{
+        text-align: center;
+    }
+
+    /*Branding*/
+     
+    
+
+    /*Footer*/
+    footer h3{
+        font-size: 50px;
+    }
+
+    footer b{
+        font-size: 47px;
+    }
+
+    .flecha{
+        display: none;
+    }
+
+    .links-footer{
+        top: 0px;
+        margin-top: 60px;
+        margin-bottom: 140px;
+    }
+
+    footer p{
+        font-size: 11px;
+    }
+}
+
+/* Medium devices (less than 992px) LG-BOOTSTRAP */
+/* LG-BOOTSTRAP*/
+/* LG-BOOTSTRAP*/
+@media (max-width: 992px) {
+    /*Generales*/
+    h1{
+        font-size: 52px;
+        margin: 40px 0;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    p{
+        font-size: 11px;
+    }
+
+    /*NavBar*/
+    .navbar .links, .contacto{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    /*Header*/
+    header{
+        margin-top: 270px;
+        margin-bottom: 220px;
+    }
+
+    header p{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    header a{
+        padding: 16px 66px;
+        font-size: 14px;
+    }
+
+    /*Quien soy*/
+    .quien-soy img{
+        width: 140px;
+    }
+
+    /*Hacerlo es posible*/
+    .marquee {
+        font-size: 11px;
+    }
+
+    .dot{
+        width: 1.2em;
+    }
+
+    .marquee span.text {
+        width: 230px;
+        letter-spacing: 1px;
+    }
+
+    /*Footer*/
+    footer a{
+        font-size: 15px;
+    }
+}
+
+
+/* Small devices (less than 768px) MD BOOTSTRAP */
+/* MD-BOOTSTRAP*/
+/* MD-BOOTSTRAP*/
+@media (max-width: 768px) {
+    /*Generales*/
+    h1{
+        font-size: 46px;
+        margin: 40px 0 52px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 32px;
+    }
+
+    /*Header*/
+    header p{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    header a{
+        padding: 15px 54px;
+        font-size: 13px;
+    }
+
+    /*Hacerlo es posible*/
+    .marquee {
+        font-size: 10px;
+    }
+
+    .marquee span.text--outline {
+        -webkit-text-stroke: 1px white;
+    }
+
+    .marquee span.text {
+        width: 210px;
+    }
+
+    /*Quien soy*/
+    .quien-soy img{
+        width: 130px;
+    }
+
+    /*Social media*/
+    .consulta-media{
+        margin-top: 14px;
+    }
+
+    .social-media b{
+        font-size: 30px;
+    }
+
+    /*Footer*/
+    footer h3{
+        font-size: 42px;
+    }
+
+    footer b{
+        font-size: 39px;
+    }
+
+    footer a{
+        font-size: 14px;
+    }
+
+    footer p{
+        font-size: 9px;
+    }
+}
+/* Less than 660px) */
+@media (max-width: 660px) {
+    /*Generales*/
+    h1{
+        font-size: 38px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+}
+
+
+/* Extra small devices (less than 576px) SM BOOTSTRAP*/
+/* SM-BOOTSTRAP*/
+/* SM-BOOTSTRAP*/
+@media (max-width: 576px) {
+    /*Generales*/
+    h1{
+        margin: 35px 0 48px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+    /*Dropdownmenú*/
+    /* .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    } */
+
+    /*Header*/
+    header{
+        margin-top: 250px;
+        margin-bottom: 200px;
+    }
+
+    header a{
+        padding: 15px 40px;
+        font-size: 11px;
+    }
+
+    header br{
+        display: none;
+    }
+
+    header p{
+        font-size: 8px;
+        margin: 0;
+    }
+
+    /*Quien soy*/
+    .quien-soy img{
+        width: 110px;
+    }
+
+    /*Redes sociales*/
+    .social-media b{
+        font-size: 26px;
+    }
+
+    /*Footer*/
+    footer h3{
+        font-size: 36px;
+    }
+
+    footer b{
+        font-size: 33px;
+    }
+
+    footer a{
+        font-size: 12px;
+    }
+}
+/* Extra small devices (less than 375px) */
+@media (max-width: 375px) {
+    
+    /*Footer*/
+    footer h3{
+        font-size: 34px;
+    }
+
+    footer b{
+        font-size: 31px;
+    }
+
+    footer a{
+        font-size: 11px;
+    }
+    
+    footer p{
+        font-size: 8px;
+    }
+}
