@@ -25,6 +25,7 @@ h3{
     font-size: 40px;
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
+    margin-bottom: 0;
 }
 
 h4{
@@ -35,6 +36,13 @@ h4{
 
 h5{
     font-family: 'Martian Mono', monospace;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+h6{
+    /*Nombre del proyecto*/
+    font-family: 'Manrope', sans-serif;
     font-weight: 300;
     font-size: 13px;
 }
@@ -128,9 +136,10 @@ li{
     width: unset;
     right: 0.5rem;
     top: 70px;
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
-    border-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -150,6 +159,28 @@ li{
 }
 
 /*Dropdown menú portafolio*/
+.portafolio-a{
+    color: white !important;
+}
+
+.portafolio-a:hover{
+    color: white;
+}
+
+.dropdown-menu li{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.dropdown-item{
+    color: #000000 !important;
+
+}
+
+.dropdown-item:hover{
+    background-color: #000000;
+    color: white !important;
+}
 
 /*Header*/
 header{
@@ -380,6 +411,7 @@ header a:hover{
     opacity: 1;
     margin: 0;
     width: 66%;
+    vertical-align: middle;
     display: inline-block;
 }
 
@@ -553,7 +585,7 @@ footer p{
 /*PORTAFOLIO*/
 /*PORTAFOLIO*/
 
-/*Header*/
+/*Portafolio Header*/
 
 /*Logos*/
 .logos{
@@ -638,6 +670,7 @@ footer p{
 .brand-img{
     border: solid black 1px !important;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .ver-todos-brand a{
@@ -650,10 +683,132 @@ footer p{
     font-size: 16px;
     font-weight: 400;
     font-family: 'Manrope', sans-serif;
-    margin-top: 66px;
+    margin-top: 46px;
+}
+
+/*Diseño web*/
+.diseno-web hr{
+    border: black solid -5px;
+    opacity: 100%;
+    vertical-align: middle;
+    /* margin-bottom: 0;
+    margin-top: 0; */
+}
+
+/*Artes para redes*/
+.artes{
+    padding: 120px 0;
+}
+
+.fila-artes{
+    margin: 70px 0 10px;
+}
+
+.artes-img{
+    border: black solid 1px;
+    margin-bottom: 20px;
+}
+
+.ver-todos-artes a{
+    text-align: center;
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 74px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 50px;
 }
 
 
+/*Poster design*/
+.dot-poster-design{
+    width: 16px;
+    vertical-align: middle;
+}
+
+
+/*Ilustraciones*/
+.ilustraciones{
+    padding: 120px 0;
+}
+
+.ilustracion-1{
+    background-image: url('../imagenes/ilustracion-uno.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: #000000 1px solid;
+    margin-bottom: 24px;
+}
+
+.ilustracion-2{
+    background-image: url('../imagenes/ilustracion-dos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: #000000 1px solid;
+    margin-bottom: 24px;
+}
+
+.ilustracion-3{
+    background-image: url('../imagenes/ilustracion-tres.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: #000000 1px solid;
+    margin-bottom: 24px;
+}
+
+.ilustracion-4{
+    background-image: url('../imagenes/ilustracion-cuatro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: #000000 1px solid;
+}
+
+.boton-ilustracion a{
+    text-align: center;
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 74px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 240px;
+    margin-bottom: 20px;
+}
+
+.vertical-texto{
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    vertical-align: middle;
+}
+
+.ver-todos-ilustraciones a{
+    text-align: center;
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 74px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 50px;
+}
 
 
 /*MEDIA QUERIES*/
@@ -844,6 +999,7 @@ footer p{
     .dropdown_menu{
         display: block;
     }
+    /*Dropdown menú portafolio*/
 
     /*Header*/
     header{
@@ -878,6 +1034,11 @@ footer p{
     .marquee span.text {
         width: 230px;
         letter-spacing: 1px;
+    }
+
+    /*Ilustraciones*/
+    .vertical-texto{
+        display: none;
     }
 
     /*Footer*/
