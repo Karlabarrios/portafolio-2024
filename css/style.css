@@ -25,7 +25,6 @@ h3{
     font-size: 40px;
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
-    margin-bottom: 0;
 }
 
 h4{
@@ -586,6 +585,36 @@ footer p{
 /*PORTAFOLIO*/
 
 /*Portafolio Header*/
+.header-portafolio{
+    background-color: #000;
+    color: white;
+    padding: 60px 0 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.header-portafolio h3{
+    margin-bottom: 24px;
+    display: inline-block;
+}
+.ultpro-1{
+    height: 460px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.ultpro-2{
+    height: 310px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.ultpro-3{
+    height: 204px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
 
 /*Logos*/
 .logos{
@@ -693,6 +722,16 @@ footer p{
     vertical-align: middle;
     /* margin-bottom: 0;
     margin-top: 0; */
+}
+.diweb-img-1{
+    object-fit: cover;
+    height: 500px;
+    border-radius: 15px;
+}
+.diweb-img-2{
+    object-fit: cover;
+    height: 200px;
+    border-radius: 15px;
 }
 
 /*Artes para redes*/
