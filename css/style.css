@@ -43,7 +43,7 @@ h6{
     /*Nombre del proyecto*/
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 a{
@@ -847,6 +847,81 @@ footer p{
     font-weight: 400;
     font-family: 'Manrope', sans-serif;
     margin-top: 50px;
+}
+
+/*LOGOFOLIO PAG*/
+/*LOGOFOLIO PAG*/
+/*LOGOFOLIO PAG*/
+
+    /*WHOLE PORTAFOLIO PAGES HEADER SETTINGS*/
+.portafolio-pages-header{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+.logofolio-section1{
+    padding: 0 8%;
+    margin-bottom: 80px;
+}
+
+.logofolio-section1 img{
+    object-fit: cover;
+    border-radius: 15px;
+    border: black solid 1px;
+}
+
+.logofolio-1{
+    height: 300px;
+}
+
+.logofolio-2{
+    height: 630px;
+}
+
+    /*WHOLE PORTAFOLIO PAGES PROYECT-TEXT SETTINGS*/
+.proyect-text{
+    position: relative;
+    bottom: 3rem;
+    left: 2rem;
+}
+
+
+
+/*BRANDING PAG*/
+/*BRANDING PAG*/
+/*BRANDING PAG*/
+.branding-section1 img{
+    border-radius: 15px;
+    border: black solid 1px;
+    object-fit: cover;
+    height: 630px;
+}
+
+
+/*DISEÑO WEB PAG*/
+/*DISEÑO WEB PAG*/
+/*DISEÑO WEB PAG*/
+
+
+/*ARTES REDES SOCIALES PAG*/
+/*ARTES REDES SOCIALES PAG*/
+/*ARTES REDES SOCIALES PAG*/
+
+.artes-section1{
+    padding: 0 8%;
+}
+.artes-section1 img{
+    border-radius: 15px;
+    border: black solid 1px;
+    object-fit: cover;
+}
+.artfolio-1{
+    height: 300px;
+}
+
+.artfolio-2{
+    height: 630px;
 }
 
 
