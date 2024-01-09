@@ -1020,6 +1020,8 @@ footer p{
 
 
 /*ILUSTRACIÓN PAG*/
+/*ILUSTRACIÓN PAG*/
+/*ILUSTRACIÓN PAG*/
 .ilustracion-section1 img{
     border-radius: 15px;
     border: black solid 1px;
@@ -1031,8 +1033,25 @@ footer p{
 /*RECURSOS*/
 /*RECURSOS*/
 /*RECURSOS*/
+.elementos{
+    padding: 120px 0;
+}
 
+.recurso-img{
+    border-radius: 15px;
+    border: black solid 1px;
+    object-fit: cover;
+    width: 100%;
+}
 
+.fila-recursos{
+    margin: 70px 0 50px;
+}
+
+/*PLANTILLAS*/
+.plantillas{
+    padding: 40px 0 100px;
+}
 
 
 
@@ -1170,14 +1189,22 @@ footer p{
         text-align: center;
     }
 
-    /*Branding*/
+
+    /*Recursos*/
+
     
+
     /*Portafolio diseño web*/
     .diwe-img-2{
         display: none;
     }
 
     .web-di-col2{
+        text-align: center;
+    }
+
+    /*WEBFOLIO*/
+    .webfolio{
         text-align: center;
     }
     
@@ -1203,6 +1230,7 @@ footer p{
     footer p{
         font-size: 11px;
     }
+    
 }
 
 /* Medium devices (less than 992px) LG-BOOTSTRAP */
