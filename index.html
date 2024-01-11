@@ -26,10 +26,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Css Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--FancyBox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <!--AOS Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Css Propia-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,7 +44,7 @@
         <div class="logo"><a href="index.html">KARLA BARRIOS</a></div>
         <ul class="links">
           <li><a href="#quien-soy">SOBRE MI</a></li>
-          <li><a href="cv">CV</a></li>
+          <li><a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">CV</a></li>
           <!--Dropdown portafolio-->
           <li class="dropdown">
             <a class="nav-link dropdown-toggle none-border active portafolio-a" href="#" data-bs-toggle="dropdown">PORTFOLIO</a>
@@ -69,7 +71,7 @@
 
     <div class="container-fluid dropdown_menu">
       <li><a href="#quien-soy">SOBRE MI</a></li>
-      <li><a href="cv">CV</a></li>
+      <li><a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">CV</a></li>
       <!-- <li><a href="portafolio">PORTFOLIO</a></li> -->
       <li class="dropdown">
         <a class="nav-link dropdown-toggle none-border active portafolio-a" href="#" data-bs-toggle="dropdown">PORTFOLIO</a>
@@ -89,18 +91,18 @@
 
 
     <!--Header-->
-    <header>
+    <header class="header-main">
       <div class="contatiner-fluid">
         <!--Bubble eyes-->
         <div class="row justify-content-end w-100 head-imgs-row">
           <div class="col-auto">
             <div class="caja-ojo-2">
-              <img src="imagenes/ojo.png" alt="ojo" class="ojo-2">
+              <img src="imagenes/home/ojo-color1.png" alt="ojo" class="ojo-2">
             </div>
           </div>
           <div class="col-auto">
             <div class="caja-ojo">
-              <img src="imagenes/ojo.png" alt="ojo" class="ojo-1">
+              <img src="imagenes/home/ojo-color1.png" alt="ojo" class="ojo-1">
             </div>
           </div>
         </div>
@@ -127,10 +129,10 @@
             </div>
             <div class="row">
               <div class="col-auto px-1">
-                <a href="" class="w-100">QUIÉN SOY</a>
+                <a href="#quien-soy" class="w-100">QUIÉN SOY</a>
               </div>
               <div class="col-auto px-1">
-                <a href="" class="w-100">OBJETIVOS</a>
+                <a href="portafolio.html" class="w-100">PORTAFOLIO</a>
               </div>
             </div>
 
@@ -186,18 +188,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 vidrio">
+            <!--Alguna imagen de perfil dentro de circulo mejor-->
             <div class="row justify-content-center">
               <div class="col-md-8 px-5 px-md-0 text-center">
                 <h3>¡HOLA! SOY KARLA</h3>
                 <p><b>Y también soy una diseñadora gráfica</b> altamente creativa con enfoque en crear diseños que hablen por las ideas que se buscan transmitir. Me apasiona crear soluciones de diseño innovadoras y siempre tengo un ojo puesto en los detalles. Capacidad demostrada para traducir la visión del cliente en diseños visuales atractivos y efectivos. Comprometida con el aprendizaje continuo y el <b>desarrollo profesional, con una fuerte voluntad de mejorar y adaptarse dentro del panorama</b> en constante evolución del diseño gráfico. Historial comprobado de colaboración con clientes y equipos multifuncionales para entregar proyectos de diseño de primer nivel a tiempo y dentro del presupuesto. Experta en aprender y aprovechar nuevas tecnologías y técnicas de diseño para mejorar los resultados creativos.</p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <a href="">
-                  <!--Cambiar imagen por background y texto en a-->
-                  <img src="imagenes/btn-prueba3.png" alt="boton">
-                </a>
               </div>
             </div>
           </div>
@@ -209,16 +204,16 @@
     <!--Section 3: Curriculum-->
     <section class="curriculum">
       <div class="container-fluid">
-        <div class="row justify-content-around change-filter">
-          <div class="col-8 curri-uno">
+        <div class="row justify-content-center change-filter">
+          <div data-aos="flip-left" class="col-8 col-xxl-6 curri-uno">
             <h3>¿QUIÉRES SABER MÁS?</h3>
             <h4>CONSULTA MI <b>CURRICULUM</b></h4>
-            <a href="">AQUÍ</a>
+            <a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">AQUÍ</a>
           </div>
-          <div class="col-8 col-xxl-3 curri-dos"></div>
-          <div class="col-xxl-auto curri-tres"></div>
+          <div data-aos="flip-left" class="col-8 col-xxl-2 curri-dos"></div>
+          <!-- <div data-aos="flip-left" class="col-xxl-auto curri-tres"></div> -->
         </div>
-        <div class="row justify-content-center curri-texto">
+        <div class="row justify-content-center mt-5">
           <div class="col-8 col-xxl-4">
             <p>Actualmente me encuentro cursando los últimos cuatrimestres de la carrera en Diseño Gráfico. A lo largo de esta trayectoria académica no solo he aprendido a usar una amplia gama de herramientas relacionadas al diseño como lo son Illustrator, Photoshop, Figma, InDesign, entre otras; sino que he construido diversos proyectos personales que</p>
           </div>
@@ -231,7 +226,7 @@
 
 
     <!--Section 4: Conoce-->
-    <section class="conoce mb-5">
+    <section class="conoce">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-10 col-xl-auto lado-conoce">
@@ -240,11 +235,11 @@
 
           <div class="col-10 col-xl-3 align-self-center centro-conoce">
             <div class="punto">
-              <img src="imagenes/dot.png" alt="dot">
+              <img src="imagenes/home/whitedot.png" alt="dot">
             </div>
             <hr>
             <div class="punto">
-              <img src="imagenes/dot.png" alt="dot">
+              <img src="imagenes/home/whitedot.png" alt="dot">
             </div>
           </div>
 
@@ -259,93 +254,88 @@
     <!--Section 5: Conoce dos-->
     <!-- partial:index.partial.html -->
     <section class="conoce-dos-sec">
-      <div class="container">
-        <div class="app">
+      <div class="app">
     
-            <div class="cardList">
-                <button class="cardList__btn btn btn--left">
-                    <div class="icon">
-                        <svg>
-                            <use xlink:href="#arrow-left"></use>
-                        </svg>
-                    </div>
-                </button>
-    
-                <div class="cards__wrapper">
-                    <div class="card current--card">
-                        <div class="card__image">
-                            <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-                        </div>
-                    </div>
-    
-                    <div class="card next--card">
-                        <div class="card__image">
-                            <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-                        </div>
-                    </div>
-    
-                    <div class="card previous--card">
-                        <div class="card__image">
-                            <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-                        </div>
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
                     </div>
                 </div>
-    
-                <button class="cardList__btn btn btn--right">
-                    <div class="icon">
-                        <svg>
-                            <use xlink:href="#arrow-right"></use>
-                        </svg>
+
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
                     </div>
-                </button>
-            </div>
-    
-            <div class="infoList">
-                <div class="info__wrapper">
-                    <div class="info current--info">
-                        <h1 class="text name">Prueba</h1>
-                        <h4 class="text location">Scotland</h4>
-                        <p class="text description">The mountains are calling</p>
-                    </div>
-    
-                    <div class="info next--info">
-                        <h1 class="text name">Machu Pichu</h1>
-                        <h4 class="text location">Peru</h4>
-                        <p class="text description">Adventure is never far away</p>
-                    </div>
-    
-                    <div class="info previous--info">
-                        <h1 class="text name">Chamonix</h1>
-                        <h4 class="text location">France</h4>
-                        <p class="text description">Let your dreams come true</p>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
                     </div>
                 </div>
             </div>
-    
-    
-            <div class="app__bg">
-                <div class="app__bg__image current--image">
-                    <img src="imagenes/branding-1.jpg" alt="" />
+
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
                 </div>
-                <div class="app__bg__image next--image">
-                    <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+            </button>
+        </div>
+
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h3 class="text name">Sane México</h3>
+                    <p class="text description">Rebranding</p>
                 </div>
-                <div class="app__bg__image previous--image">
-                    <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+
+                <div class="info next--info">
+                    <h3 class="text name">Hamburgo Sports</h3>
+                    <p class="text description">Rebranding y artes</p>
+                </div>
+
+                <div class="info previous--info">
+                    <h3 class="text name">Wonderskin</h3>
+                    <p class="text description">Artes y community management</p>
                 </div>
             </div>
         </div>
-    
-    
-        <svg class="icons" style="display: none;">
-            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                <polyline points='328 112 184 256 328 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-            </symbol>
-            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-                <polyline points='184 112 328 256 184 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-            </symbol>
-        </svg>   
-      </div>
+
+
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="imagenes/branding-1.jpg" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+    <svg class="icons" style="display: none;">
+        <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='328 112 184 256 328 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+        <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+            <polyline points='184 112 328 256 184 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+        </symbol>
+    </svg> 
     </section>
 
 
@@ -401,21 +391,22 @@
           </div>
         </div>
         <div class="row justify-content-center imgs-media">
-          <div class="col-8 col-lg-6 col-xl-4 text-center social-col">
+          
+          <div data-aos="zoom-in" class="col-8 col-lg-6 col-xl-4 text-center social-col mb-5">
             <a href="https://www.behance.net/karlabarrios3" target="_blank">
-              <img src="imagenes/redes-behance.jpg" alt="behance-img" class="w-100">
+              <img src="imagenes/home/behance.png" alt="behance-img" class="w-100 inside-somedia">
             </a>
             <a href="https://www.behance.net/karlabarrios3" target="_blank" class="so-link">BEHANCE</a>
           </div>
-          <div class="col-8 col-lg-6 col-xl-4 text-center social-col">
+          <div data-aos="zoom-in" class="col-8 col-lg-6 col-xl-4 text-center social-col mb-5">
             <a href="https://www.linkedin.com/in/karlabarrios0411/" target="_blank">
-              <img src="imagenes/redes-linkedin.jpg" alt="linkedin-img" class="w-100">
+              <img src="imagenes/home/linkedin.png" alt="linkedin-img" class="w-100 inside-somedia">
             </a>
             <a href="https://www.linkedin.com/in/karlabarrios0411/" target="_blank" class="so-link">LINKEDIN</a>
           </div>
-          <div class="col-8 col-xl-4 text-center social-col">
+          <div data-aos="zoom-in" class="col-8 col-xl-4 text-center social-col mb-5">
             <a href="https://github.com/Karlabarrios" target="_blank">
-              <img src="imagenes/redes-github.jpg" alt="github-img" class="w-100">  
+              <img src="imagenes/home/github.png" alt="github-img" class="w-100 inside-somedia">  
             </a>
             <a href="https://github.com/Karlabarrios" target="_blank" class="so-link">GITHUB</a>
           </div>
@@ -498,6 +489,20 @@
           ? 'fa-solid fa-xmark'
           : 'fa-solid fa-bars'
       }
+    </script>
+
+    <!--FancyBox-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+      // custom
+      });
+    </script>
+
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!--Slider-->

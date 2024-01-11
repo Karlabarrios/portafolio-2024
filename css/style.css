@@ -13,30 +13,35 @@ h1{
     letter-spacing: -3px;
     font-weight: 700;
     margin: 20px 0;
+    color: #000;
 }
 
 h2{
     font-size: 54px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
+    color: #000;
 }
 
 h3{
     font-size: 40px;
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
+    color: #000;
 }
 
 h4{
     font-size: 16px;
     font-family: 'Martian Mono', monospace;
     font-weight: 300;
+    color: #000;
 }
 
 h5{
     font-family: 'Martian Mono', monospace;
     font-weight: 300;
     font-size: 13px;
+    color: #000;
 }
 
 h6{
@@ -44,6 +49,8 @@ h6{
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
     font-size: 18px;
+    color: #000;
+    margin-bottom: 0;
 }
 
 a{
@@ -182,26 +189,28 @@ li{
 }
 
 /*Header*/
-header{
-    margin: -230px 0 100px;
+.header-main {
+    margin: -230px 0 140px;
 }
 
-header b{
+.header-main  b{
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
 }
 
-header p{
+.header-main  p{
     font-size: 11px;
     margin: 0;
     font-weight: 300;
     color: #717171;
 }
 
-header a{
+.header-main a{
+    /* color: black; */
+    /* border: 1px black solid; */
+    color: #fff;
     text-align: center;
-    color: black;
-    border: 1px black solid;
+    background-color: black;
     border-radius: 15px;
     padding: 18px 74px;
     margin-top: 80px;
@@ -209,11 +218,13 @@ header a{
     font-size: 16px;
     font-weight: 400;
     font-family: 'Manrope', sans-serif;
+    transform: scale(1);
 }
 
-header a:hover{
+.header-main a:hover{
     background-color: black;
     color: white;
+    transform: scale(1.02);
 }
 
 .head-imgs-row{
@@ -228,6 +239,13 @@ header a:hover{
 
 .ojo-1{
     width: 440px;
+}
+
+.header-main img{
+    filter: brightness(.97); 
+    border: white 1px solid;
+    border-radius: 50%;
+    padding: 12px;
 }
 
 /*Section 1: Hacerlo es posible*/
@@ -266,7 +284,7 @@ header a:hover{
 
 .dot{
     width: 1.3em;
-    background-image: url("../imagenes/dot-2.png");
+    background-image: url("../imagenes/home/dot-2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -283,9 +301,10 @@ header a:hover{
     100% { transform: translateX(-22em); }
 }
 
+
 /*Section 2: Quien soy*/
 .quien-soy{
-    padding: 100px 15% 120px 15%;
+    padding: 140px 15% 90px 15%;
 }
 
 .quien-soy h3{
@@ -293,7 +312,7 @@ header a:hover{
 }
 
 .vidrio{
-    background-image: url(../imagenes/vidrio-quientres.png);
+    background-image: url(../imagenes/home/vidrio-pruebatres.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -301,7 +320,7 @@ header a:hover{
 }
 
 .quien-soy p{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .quien-soy img{
@@ -321,6 +340,12 @@ header a:hover{
 }
 
 /*Section 3: Curriculum*/
+
+.curriculum{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 .curriculum a{
     text-align: center;
     color: black;
@@ -345,8 +370,9 @@ header a:hover{
     text-align: end;
     border-radius: 15px;
     border: 1px black solid;
-    padding: 80px 8% 120px 0;
-    color: white;
+    padding: 80px 6% 120px 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .curri-dos{
@@ -357,6 +383,8 @@ header a:hover{
     padding: 80px 0;
     border-radius: 15px;
     border: 1px black solid;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .change-filter{
@@ -366,6 +394,13 @@ header a:hover{
 
 .change-filter:hover{
     filter: saturate(1);
+}
+
+.change-filter h3{
+    color: white;
+}
+.change-filter h4{
+    color: white;
 }
 
 .change-filter:hover h3{
@@ -392,21 +427,25 @@ header a:hover{
     border-radius: 15px;
     border: 1px black solid;
 }
-.curri-texto{
-    margin: 40px 0 120px 0;
-}
 
 .curriculum p{
     text-align: justify;
 }
 
 /*Section 4: Conoce*/
+.conoce{
+    margin-top: 90px;
+    padding: 20px 0 20px;
+    background-color: #000;
+}
+
 .conoce h3{
     margin-bottom: 0 !important;
+    color: white !important;
 }
 
 .conoce hr{
-    border: solid black -5px !important;
+    border: solid white 1px !important;
     opacity: 1;
     margin: 0;
     width: 66%;
@@ -442,20 +481,19 @@ header a:hover{
 }
   
   /*Background*/
-.conoce-dos-sec{
+  
+.conoce-dos-sec {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-  
-.conoce-dos-sec {
     width: 100%;
-    height: 100vh;
+    height: 94vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.787);
     overflow: hidden;
+    margin-bottom: 90px !important;
 }
   
 button {
@@ -483,7 +521,7 @@ button:focus {
     width: 100%;
     height: 100%;
     z-index: -5;
-    filter: blur(8px);
+    filter: blur(6px);
     pointer-events: none;
     user-select: none;
     overflow: hidden;
@@ -496,9 +534,9 @@ button:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #000000;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
   .app__bg__image {
@@ -646,15 +684,15 @@ button:focus {
   }
   
   .info {
-    margin-bottom: calc(var(--card-height) / 8);
-    margin-left: calc(var(--card-width) / 1.5);
+    margin-bottom: calc(var(--card-height) / 9);
+    margin-left: calc(var(--card-width) / 1);
     transform: translateZ(2rem);
     transition: transform var(--card-transition-duration) var(--card-transition-easing);
   }
   .info .text {
     position: relative;
-    font-family: "Montserrat";
-    font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
+    font-family: 'Manrope', sans-serif;
+    font-size: calc(var(--card-width) * var(--text-size-offset, 0.15));
     white-space: nowrap;
     color: #fff;
     width: fit-content;
@@ -664,15 +702,15 @@ button:focus {
     text-transform: uppercase;
   }
   .info .location {
-    font-weight: 800;
+    font-weight: 400;
   }
   .info .location {
     --mg-left: 40px;
     --text-size-offset: 0.12;
-    font-weight: 600;
+    font-weight: 300;
     margin-left: var(--mg-left);
     margin-bottom: calc(var(--mg-left) / 2);
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.6rem;
   }
   .info .location::before, .info .location::after {
     content: "";
@@ -693,7 +731,7 @@ button:focus {
   }
   .info .description {
     --text-size-offset: 0.065;
-    font-weight: 500;
+    font-weight: 200;
   }
   .info.current--info {
     opacity: 1;
@@ -707,14 +745,14 @@ button:focus {
   @media only screen and (min-width: 800px) {
     :root {
       --card-width: 250px;
-      --card-height: 460px;
+      --card-height: 430px;
     }
   }
 
 
 /*Contacto*/
 .contactame{
-    padding: 120px 0 30px;
+    padding: 90px 0 90px;
 }
 
 .fondo-contactame{
@@ -751,7 +789,7 @@ button{
 
 /*Section 6: Social media*/
 .social-media{
-    padding: 120px 0 120px 0;
+    padding: 90px 0 200px 0;
 }
 
 .social-media h3{
@@ -766,20 +804,27 @@ button{
 }
 
 .social-media img{
+    background-image: url('../imagenes/home/back-redes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: solid black 1px !important;
     border-radius: 15px;
+    transform: scale(1);
+    transition: all ease .3s;
+}
+
+.social-media img:hover{
+    transform: scale(1.05);
 }
 
 .imgs-media{
     padding: 0 10%;
 }
 
-.social-col{
-    margin-bottom: 80px;
-}
 
 .text-media{
-    padding: 0 10% 66px;
+    padding: 0 10% 70px;
 }
 
 .social-media h4{
@@ -806,6 +851,7 @@ footer{
 
 footer h3{
     font-size: 53px;
+    color: white !important;
 }
 footer b{
     font-weight: 400;
@@ -862,53 +908,75 @@ footer p{
 /*PORTAFOLIO*/
 /*PORTAFOLIO*/
 
+/*Might be GENERAL in all portfolio images*/
+
+.designs-brightness-plush6{
+    transition: all ease .7s;
+}
+
+.designs-brightness-plush6 h6{
+    opacity: 0;
+    color: white;
+}
+
+.designs-brightness-plush6:hover h6{
+    opacity: 1;
+}
+
+.designs-brightness-plush6:hover img{
+    filter: brightness(.5);
+    transform: scale(.992);
+}
+
+
+/*Imágenes con col-6 que comparten 50% con otra col-6*/
+.col48-no50{
+    width: 48%;
+}
+
+
+
 /*Portafolio Header*/
 .header-portafolio{
     background-color: #000;
-    color: white;
     padding: 60px 0 40px;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 .header-portafolio h3{
     margin-bottom: 24px;
     display: inline-block;
+    color: white !important;
 }
 .ultpro-1{
-    height: 460px;
+    height: 464px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 .ultpro-2{
     height: 310px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 .ultpro-3{
     height: 204px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 
 
 /*Logos*/
 .logos{
-    padding: 120px 0;
+    padding: 90px 0;
 }
 
 .logo-img{
     width: 300px;
     border: black solid 1px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    transition: all ease .3s;
 }
 
-.fila-logos{
-    margin: 70px 0 50px;
-}
 
 .ver-todos-logo a{
     text-align: center;
@@ -925,7 +993,7 @@ footer p{
 
 /*Branding*/
 .branding{
-    padding: 120px 0 30px;
+    padding: 90px 0 30px;
 }
 
 .branding-1-row{
@@ -971,13 +1039,14 @@ footer p{
 
 /*Branding 2*/
 .branding-2{
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .brand-img{
     border: solid black 1px !important;
     border-radius: 15px;
-    margin-bottom: 20px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .ver-todos-brand a{
@@ -994,6 +1063,10 @@ footer p{
 }
 
 /*Diseño web*/
+.diseno-web{
+    padding: 90px 0;
+}
+
 .diwe-img-1{
     height: 520px;
     object-fit: cover;
@@ -1047,7 +1120,7 @@ footer p{
 
 /*Artes para redes*/
 .artes{
-    padding: 120px 0;
+    padding: 90px 0;
 }
 
 .fila-artes{
@@ -1074,6 +1147,10 @@ footer p{
 
 
 /*Poster design*/
+.poster{
+    padding: 90px 0;
+}
+
 .dot-poster-design{
     width: 16px;
     vertical-align: middle;
@@ -1082,11 +1159,11 @@ footer p{
 
 /*Ilustraciones*/
 .ilustraciones{
-    padding: 120px 0;
+    padding: 90px 0 120px;
 }
 
 .ilustracion-1{
-    background-image: url('../imagenes/ilustracion-uno.jpg');
+    background-image: url('../imagenes/portafolio/ilustracion-uno.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1096,7 +1173,7 @@ footer p{
 }
 
 .ilustracion-2{
-    background-image: url('../imagenes/ilustracion-dos.jpg');
+    background-image: url('../imagenes/portafolio/ilustracion-dos.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1106,7 +1183,7 @@ footer p{
 }
 
 .ilustracion-3{
-    background-image: url('../imagenes/ilustracion-tres.jpg');
+    background-image: url('../imagenes/portafolio/ilustracion-tres.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1116,7 +1193,7 @@ footer p{
 }
 
 .ilustracion-4{
-    background-image: url('../imagenes/ilustracion-cuatro.jpg');
+    background-image: url('../imagenes/portafolio/ilustracion-cuatro.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1158,6 +1235,7 @@ footer p{
     font-weight: 400;
     font-family: 'Manrope', sans-serif;
     margin-top: 50px;
+    display: none;
 }
 
 /*LOGOFOLIO PAG*/
@@ -1187,7 +1265,7 @@ footer p{
 }
 
 .logofolio-2{
-    height: 630px;
+    height: 624px;
 }
 
     /*WHOLE PORTAFOLIO PAGES PROYECT-TEXT SETTINGS*/
@@ -1281,7 +1359,7 @@ footer p{
 }
 
 .artfolio-2{
-    height: 630px;
+    height: 624px;
 }
 
 
@@ -1323,7 +1401,7 @@ footer p{
 }
 
 .fila-recursos{
-    margin: 70px 0 50px;
+    margin: 70px 0 30px;
 }
 
 /*PLANTILLAS*/
@@ -1347,8 +1425,8 @@ footer p{
 @media (max-width: 1600px) {
     /*Generales*/
     /*Header*/
-    header{
-        margin: -210px 0 100px;
+    .header-main{
+        margin-top: -210px;
     }
 
     .head-imgs-row{
@@ -1371,8 +1449,8 @@ footer p{
 @media (max-width: 1400px) {
     /*Generales*/
     /*Header*/
-    header{
-        margin: -150px 0 100px;
+    .header-main{
+        margin-top: -150px
     }
 
     .head-imgs-row{
@@ -1415,7 +1493,7 @@ footer p{
 
 /* Delete bubble at 1300 */
 @media (max-width: 1300px) {
-    header{
+    .header-main{
         margin: 200px 0 100px;
     }
 
@@ -1439,7 +1517,7 @@ footer p{
     }
 
     /*Header*/
-    header a{
+    .header-main a{
         padding: 17px 70px;
         font-size: 14px;
     }
@@ -1544,17 +1622,17 @@ footer p{
     /*Dropdown menú portafolio*/
 
     /*Header*/
-    header{
+    .header-main{
         margin-top: 270px;
         margin-bottom: 220px;
     }
 
-    header p{
+    .header-main p{
         font-size: 10px;
         margin: 0;
     }
 
-    header a{
+    .header-main a{
         padding: 16px 66px;
         font-size: 14px;
     }
@@ -1578,14 +1656,21 @@ footer p{
         letter-spacing: 1px;
     }
 
-    /*Ilustraciones*/
+    /*PORTAFOLIO Ilustraciones*/
     .vertical-texto{
         display: none;
+    }
+    .ver-todos-ilustraciones a{
+        display: inline-block;
     }
 
     /*Footer*/
     footer a{
         font-size: 15px;
+    }
+    /*Imágenes con col-6 que comparten 50% con otra col-6*/
+    .col48-no50{
+        width: 90%;
     }
 }
 
@@ -1614,7 +1699,7 @@ footer p{
         margin: 0;
     }
 
-    header a{
+    .header-main a{
         padding: 15px 54px;
         font-size: 13px;
     }
@@ -1713,7 +1798,7 @@ footer p{
         margin-bottom: 200px;
     }
 
-    header a{
+    .header-main a{
         padding: 15px 40px;
         font-size: 11px;
     }
