@@ -38,56 +38,45 @@
 
 
 <body>
-    <!--BarNav prueba-->
-    <nav class="navbar fixed-top">
+    <!--Last navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <div class="logo"><a href="index.html">KARLA BARRIOS</a></div>
-        <ul class="links">
-          <li><a href="#quien-soy">SOBRE MI</a></li>
-          <li><a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">CV</a></li>
-          <!--Dropdown portafolio-->
-          <li class="dropdown">
-            <a class="nav-link dropdown-toggle none-border active portafolio-a" href="#" data-bs-toggle="dropdown">PORTFOLIO</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="portafolio.html">Ver todo</a></li>
-              <li><a class="dropdown-item" href="logos.html">Logos</a></li>
-              <li><a class="dropdown-item" href="branding.html">Branding</a></li>
-              <li><a class="dropdown-item" href="disenoweb.html">Diseño web</a></li>
-              <li><a class="dropdown-item" href="artes-redes.html">Artes</a></li>
-              <li><a class="dropdown-item" href="poster-design.html">Posters</a></li>
-              <li><a class="dropdown-item" href="ilustracion.html">Ilustración</a></li>
-            </ul>
-          </li>
-          <!--Si no funciona usar:-->
-          <!-- <li><a href="portafolio.html">PORTFOLIO</a></li> -->
-          <li class="recursos"><a href="recursos.html">RECURSOS</a></li>
-        </ul>
-        <a href="contacto" class="contacto">CONTACTO</a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i><!--fa-thin-->
+        <a class="navbar-brand" href="index.html">KARLA BARRIOS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-center" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-centro">
+            <li class="nav-item">
+              <a class="menu-nav-ablanco nav-link" href="#quien-soy">SOBRE MI</a>
+            </li>
+            <li class="nav-item">
+              <a class="menu-nav-ablanco" href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">CV</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="menu-nav-ablanco nav-link dropdown-toggle" href="portafolio.html" data-bs-toggle="dropdown">PORTAFOLIO</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="portafolio.html">Ver todo</a></li>
+                <li><a class="dropdown-item" href="logos.html">Logos</a></li>
+                <li><a class="dropdown-item" href="branding.html">Branding</a></li>
+                <li><a class="dropdown-item" href="disenoweb.html">Diseño web</a></li>
+                <li><a class="dropdown-item" href="artes-redes.html">Artes</a></li>
+                <li><a class="dropdown-item" href="poster-design.html">Posters</a></li>
+                <li><a class="dropdown-item" href="ilustracion.html">Ilustraciones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item no-border-nav">
+              <a class="menu-nav-ablanco nav-link" href="recursos.html">RECURSOS</a>
+            </li>
+            <li class="nav-item contacto-li">
+              <a class="menu-nav-ablanco nav-link" href="#contactame">CONTACTO</a>
+            </li>
+          </ul>
         </div>
+        <a class="contacto" href="#contactame">CONTACTO</a>
       </div>
     </nav>
-
-    <div class="container-fluid dropdown_menu">
-      <li><a href="#quien-soy">SOBRE MI</a></li>
-      <li><a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">CV</a></li>
-      <!-- <li><a href="portafolio">PORTFOLIO</a></li> -->
-      <li class="dropdown">
-        <a class="nav-link dropdown-toggle none-border active portafolio-a" href="#" data-bs-toggle="dropdown">PORTFOLIO</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="portafolio.html">Ver todo</a></li>
-          <li><a class="dropdown-item" href="logos.html">Logos</a></li>
-          <li><a class="dropdown-item" href="branding.html">Branding</a></li>
-          <li><a class="dropdown-item" href="disenoweb.html">Diseño web</a></li>
-          <li><a class="dropdown-item" href="artes-redes.html">Artes</a></li>
-          <li><a class="dropdown-item" href="poster-design.html">Posters</a></li>
-          <li><a class="dropdown-item" href="ilustracion.html">Ilustración</a></li>
-        </ul>
-      </li>
-      <li><a href="recursos.html">RECURSOS</a></li>
-      <li><a href="contacto">CONTACTO</a></li> <!--class="contacto" maybe-->
-    </div>
 
 
     <!--Header-->
@@ -96,12 +85,12 @@
         <!--Bubble eyes-->
         <div class="row justify-content-end w-100 head-imgs-row">
           <div class="col-auto">
-            <div class="caja-ojo-2">
+            <div data-aos="zoom-in-left" class="caja-ojo-2">
               <img src="imagenes/home/ojo-color1.png" alt="ojo" class="ojo-2">
             </div>
           </div>
           <div class="col-auto">
-            <div class="caja-ojo">
+            <div data-aos="zoom-in-left" class="caja-ojo">
               <img src="imagenes/home/ojo-color1.png" alt="ojo" class="ojo-1">
             </div>
           </div>
@@ -112,26 +101,26 @@
           <div class="col-sm-10 ps-5 ps-sm-0">
             <div class="row">
               <div class="col-auto order-2 order-sm-1">
-                <h2>UNA NUEVA <b>VISIÓN</b></h2>
+                <h2 data-aos="zoom-out">UNA NUEVA <b>VISIÓN</b></h2>
               </div>
               <div class="col-auto py-2 align-items-center order-1 order-sm-2">
-                <p>Si tu lo puedes<br> imaginar, yo lo <br>puedo crear +3+</p>
+                <p data-aos="zoom-out" data-aos-delay="40">Si tu lo puedes<br> imaginar, yo lo <br>puedo crear +3+</p>
               </div>
             </div>
             <div class="row">
               <div class="col-auto">
-                <h1>PARA TUS PROYECTOS</h1>
+                <h1 data-aos="zoom-out" data-aos-delay="50">PARA TUS PROYECTOS</h1>
               </div>
             <div class="row">
               <div class="col-auto">
-                <h2>SIN <b>LÍMITES</b> DE DISEÑO</h2>
+                <h2 data-aos="zoom-out" data-aos-delay="60">SIN <b>LÍMITES</b> DE DISEÑO</h2>
               </div>
             </div>
             <div class="row">
-              <div class="col-auto px-1">
+              <div data-aos="zoom-out" data-aos-delay="10" class="col-auto px-1">
                 <a href="#quien-soy" class="w-100">QUIÉN SOY</a>
               </div>
-              <div class="col-auto px-1">
+              <div data-aos="zoom-out" data-aos-delay="10" class="col-auto px-1">
                 <a href="portafolio.html" class="w-100">PORTAFOLIO</a>
               </div>
             </div>
@@ -191,8 +180,8 @@
             <!--Alguna imagen de perfil dentro de circulo mejor-->
             <div class="row justify-content-center">
               <div class="col-md-8 px-5 px-md-0 text-center">
-                <h3>¡HOLA! SOY KARLA</h3>
-                <p><b>Y también soy una diseñadora gráfica</b> altamente creativa con enfoque en crear diseños que hablen por las ideas que se buscan transmitir. Me apasiona crear soluciones de diseño innovadoras y siempre tengo un ojo puesto en los detalles. Capacidad demostrada para traducir la visión del cliente en diseños visuales atractivos y efectivos. Comprometida con el aprendizaje continuo y el <b>desarrollo profesional, con una fuerte voluntad de mejorar y adaptarse dentro del panorama</b> en constante evolución del diseño gráfico. Historial comprobado de colaboración con clientes y equipos multifuncionales para entregar proyectos de diseño de primer nivel a tiempo y dentro del presupuesto. Experta en aprender y aprovechar nuevas tecnologías y técnicas de diseño para mejorar los resultados creativos.</p>
+                <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">¡HOLA! SOY KARLA</h3>
+                <p data-aos="fade-up" data-aos-anchor-placement="top-bottom"><b>Y también soy una diseñadora gráfica</b> altamente creativa con enfoque en crear diseños que hablen por las ideas que se buscan transmitir. Me apasiona crear soluciones de diseño innovadoras y siempre tengo un ojo puesto en los detalles. Capacidad demostrada para traducir la visión del cliente en diseños visuales atractivos y efectivos. Comprometida con el aprendizaje continuo y el <b>desarrollo profesional, con una fuerte voluntad de mejorar y adaptarse dentro del panorama</b> en constante evolución del diseño gráfico. Historial comprobado de colaboración con clientes y equipos multifuncionales para entregar proyectos de diseño de primer nivel a tiempo y dentro del presupuesto. Experta en aprender y aprovechar nuevas tecnologías y técnicas de diseño para mejorar los resultados creativos.</p>
               </div>
             </div>
           </div>
@@ -205,12 +194,12 @@
     <section class="curriculum">
       <div class="container-fluid">
         <div class="row justify-content-center change-filter">
-          <div data-aos="flip-left" class="col-8 col-xxl-6 curri-uno">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-8 col-xl-6 curri-uno">
             <h3>¿QUIÉRES SABER MÁS?</h3>
             <h4>CONSULTA MI <b>CURRICULUM</b></h4>
             <a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">AQUÍ</a>
           </div>
-          <div data-aos="flip-left" class="col-8 col-xxl-2 curri-dos"></div>
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-8 col-xl-2 curri-dos"></div>
           <!-- <div data-aos="flip-left" class="col-xxl-auto curri-tres"></div> -->
         </div>
         <div class="row justify-content-center mt-5">
@@ -229,21 +218,21 @@
     <section class="conoce">
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-10 col-xl-auto lado-conoce">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-10 col-xl-auto lado-conoce">
             <h3>CONOCE ALGUNOS</h3>
           </div>
 
-          <div class="col-10 col-xl-3 align-self-center centro-conoce">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100" class="col-10 col-xl-3 align-self-center centro-conoce">
             <div class="punto">
-              <img src="imagenes/home/whitedot.png" alt="dot">
+              <img src="imagenes/home/dot-2.png" alt="dot">
             </div>
             <hr>
             <div class="punto">
-              <img src="imagenes/home/whitedot.png" alt="dot">
+              <img src="imagenes/home/dot-2.png" alt="dot">
             </div>
           </div>
 
-          <div class="col-10 col-xl-auto lado-conoce">
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-10 col-xl-auto lado-conoce">
             <h3>DE MIS PROYECTOS</h3>
           </div>
         </div>
@@ -253,7 +242,7 @@
 
     <!--Section 5: Conoce dos-->
     <!-- partial:index.partial.html -->
-    <section class="conoce-dos-sec">
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="conoce-dos-sec">
       <div class="app">
     
         <div class="cardList">
@@ -268,19 +257,19 @@
             <div class="cards__wrapper">
                 <div class="card current--card">
                     <div class="card__image">
-                        <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                        <img src="imagenes/home/alunog-pro.jpg" alt="algunos-proyectos-img" />
                     </div>
                 </div>
 
                 <div class="card next--card">
                     <div class="card__image">
-                        <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                        <img src="imagenes/home/algunos-pro3.jpg" alt="algunos-proyectos-img" />
                     </div>
                 </div>
 
                 <div class="card previous--card">
                     <div class="card__image">
-                        <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                        <img src="imagenes/home/algunos-pro2.jpg" alt="algunos-proyectos-img" />
                     </div>
                 </div>
             </div>
@@ -316,13 +305,13 @@
 
         <div class="app__bg">
             <div class="app__bg__image current--image">
-                <img src="imagenes/branding-1.jpg" alt="" />
+                <img src="imagenes/home/proyect-bg.jpg" alt="algunos-proyectos-img-branding" />
             </div>
             <div class="app__bg__image next--image">
-                <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                <img src="imagenes/home/proyect-bg3.jpg" alt="algunos-proyectos-img-branding" />
             </div>
             <div class="app__bg__image previous--image">
-                <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                <img src="imagenes/home/proyect-bg2.jpg" alt="algunos-proyectos-img-branding" />
             </div>
         </div>
     </div>
@@ -338,6 +327,29 @@
     </svg> 
     </section>
 
+    <!--Section 6: Conoce 3-->
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="-200" class="conoce-tres">
+      <div class="container-fluid">
+        <div class="row w-100 justify-content-between px-5">
+          <div class="col-auto">
+            <div class="caja-vetodos1">
+              <a href="portafolio.html">
+                <img src="imagenes/home/vertodos-pys2.png" alt="ver-todos">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="caja-vetodos2">
+              <a href="portafolio.html">
+                <img src="imagenes/home/vertodos-pys2.png" alt="ver-todos">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!--Section 6: Contacto-->
     <section class="contactame" id="contactame">
@@ -346,24 +358,24 @@
           <div class="col-10 fondo-contactame">
             <div class="row justify-content-center">
               <div class="col text-center">
-                <h3>¡CONTÁCTAME!</h3>
+                <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">¡CONTÁCTAME!</h3>
               </div>
             </div> 
             <div class="row justify-content-center">
               <!--Nombre-->
-              <div class="col-8 col-lg-4 mb-4">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-8 col-lg-4 mb-4">
                 <input type="nombre" class="form-control text-center py-3" id="nombre-input" placeholder="Nombre(s)">
               </div>
               <!--Apellido-->
-              <div class="col-8 col-lg-4 mb-4">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-8 col-lg-4 mb-4">
                 <input type="apellido" class="form-control text-center py-3" id="apellido-input" placeholder="Apellido(s)">
               </div>
               <!--Correo-->
-              <div class="col-8 mb-4">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-8 mb-4">
                 <input type="correo" class="form-control text-center py-3" id="correo-input" placeholder="Correo">
               </div>
               <!--Motivos o sugerencias-->
-              <div class="col-8 mb-4">
+              <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-8 mb-4">
                 <input type="motivos" class="form-control text-center py-5" id="motivos-input" placeholder="Motivos o sugerencias (opcional)">
               </div>
             </div>
@@ -387,24 +399,24 @@
       <div class="container">
         <div class="row justify-content-center text-media">
           <div class="col-12">
-            <h3>SI AÚN QUIERES SABER MÁS, TAMBIÉN PUEDES <br><b>CONSULTAR MIS REDES SOCIALES</b></h3>
+            <h3 data-aos="fade-up" data-aos-anchor-placement="top-bottom">SI AÚN QUIERES SABER MÁS, TAMBIÉN PUEDES <br><b>CONSULTAR MIS REDES SOCIALES</b></h3>
           </div>
         </div>
         <div class="row justify-content-center imgs-media">
           
-          <div data-aos="zoom-in" class="col-8 col-lg-6 col-xl-4 text-center social-col mb-5">
+          <div data-aos="zoom-in" data-aos-delay="80" class="col-8 col-lg-6 col-xl-4 text-center social-col mb-5">
             <a href="https://www.behance.net/karlabarrios3" target="_blank">
               <img src="imagenes/home/behance.png" alt="behance-img" class="w-100 inside-somedia">
             </a>
             <a href="https://www.behance.net/karlabarrios3" target="_blank" class="so-link">BEHANCE</a>
           </div>
-          <div data-aos="zoom-in" class="col-8 col-lg-6 col-xl-4 text-center social-col mb-5">
+          <div data-aos="zoom-in" data-aos-delay="40" class="col-8 col-lg-6 col-xl-4 text-center social-col mb-5">
             <a href="https://www.linkedin.com/in/karlabarrios0411/" target="_blank">
               <img src="imagenes/home/linkedin.png" alt="linkedin-img" class="w-100 inside-somedia">
             </a>
             <a href="https://www.linkedin.com/in/karlabarrios0411/" target="_blank" class="so-link">LINKEDIN</a>
           </div>
-          <div data-aos="zoom-in" class="col-8 col-xl-4 text-center social-col mb-5">
+          <div data-aos="zoom-in" data-aos-delay="80" class="col-8 col-xl-4 text-center social-col mb-5">
             <a href="https://github.com/Karlabarrios" target="_blank">
               <img src="imagenes/home/github.png" alt="github-img" class="w-100 inside-somedia">  
             </a>

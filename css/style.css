@@ -75,50 +75,55 @@ body{
     background-size: cover;
 }
 
-/*NavBar segunda prueba*/
-nav{
-    background-color: #000000;
-}
-li{
-    list-style: none;
-}
-.navbar ul{
-    margin-bottom: 0 !important;
-    padding-left: 0 !important;
-}
-
-.navbar a{
-    color: #fff;
-    font-size: 16px;
-}
-
+/*NavBAR TRES*/
 .navbar{
-    width: 100%;
-    height: 70px;
-    margin: 0 auto;
-    display: flex;
+    background-color: black;
+    padding-top: 28px;
+    padding-bottom: 28px;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .logo a{
-    font-size: 17px;
-    font-weight: 500;
+.navbar-brand{
+    font-size: 17px !important;
+    font-weight: 500 !important;
     border-right: white solid 1px;
     padding-right: 20px;
+    color: white !important;
+    margin-right: 0 !important;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
-.navbar .links{
-    display: flex;
+.navbar a{
+    color: white;
+    font-size: 16px;
 }
 
-.links li{
+.dropdown-item{
+    color: #000 !important;
+}
+
+.dropdown-item:hover{
+    color: white !important;
+    background-color: black;
+}
+
+.nav-item{
     border-right: white solid 1px;
+    color: white !important;
     padding: 0 20px;
 }
 
-.recursos{
-    border-right: none !important;
+
+.menu-nav-ablanco{
+    color: white !important;
+    padding: 0 !important;
+}
+
+.menu-centro{
+    margin: 0 !important;
+    text-align: center;
 }
 
 .contacto{
@@ -126,67 +131,18 @@ li{
     padding-left: 20px;
 }
 
-.navbar .toggle_btn{
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
+.contacto-li{
     display: none;
 }
 
-/*DropDown menú*/
-.dropdown_menu{
-    display: none;
-    height: 0;
-    position: absolute;
-    left: 0.5rem;
-    width: unset;
-    right: 0.5rem;
-    top: 70px;
-    background-color: rgb(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.no-border-nav{
+    border: 0px !important;
 }
 
-.dropdown_menu.open{
-    height: auto;
+.navbar-toggler{
+    margin: 0;
 }
 
-.dropdown_menu li{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.dropdown_menu a{
-    color: #fff;
-}
-
-/*Dropdown menú portafolio*/
-.portafolio-a{
-    color: white !important;
-}
-
-.portafolio-a:hover{
-    color: white;
-}
-
-.dropdown-menu li{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.dropdown-item{
-    color: #000000 !important;
-
-}
-
-.dropdown-item:hover{
-    background-color: #000000;
-    color: white !important;
-}
 
 /*Header*/
 .header-main {
@@ -346,24 +302,13 @@ li{
     padding-bottom: 90px;
 }
 
-.curriculum a{
-    text-align: center;
-    color: black;
-    border: 1px black solid;
-    border-radius: 15px;
-    padding: 18px 40px;
-    display: inline-block;
-    margin-top: 10px;
-    color: black;
-}
-
 .curriculum b{
     font-weight: 600;
 }
 
 .curri-uno{
     /*Change images to another ones with less brightness*/
-    background-image: url(../imagenes/curriculum1-remplazo.jpg);
+    background-image: url(../imagenes/home/curriculum-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -376,7 +321,7 @@ li{
 }
 
 .curri-dos{
-    background-image: url(../imagenes/curriculum2-remplazo.jpg);
+    background-image: url(../imagenes/home/curriculum-1-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -413,12 +358,27 @@ li{
 .change-filter a{
     border: solid white 1px !important;
     color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 18px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    transform: scale(1);
 }
 
 .change-filter:hover a{
     background-color: black;
     border: solid black 1px !important;
+    color: white;
     border: 0px;
+}
+
+.curriculum a{
+    transition: all ease .4s;
+}
+
+.curriculum a:hover{ 
+    transform: scale(.96);
 }
 
 .curri-tres{
@@ -436,16 +396,15 @@ li{
 .conoce{
     margin-top: 90px;
     padding: 20px 0 20px;
-    background-color: #000;
+    margin-bottom: 30px;
 }
 
 .conoce h3{
     margin-bottom: 0 !important;
-    color: white !important;
 }
 
 .conoce hr{
-    border: solid white 1px !important;
+    border: solid black -5px !important;
     opacity: 1;
     margin: 0;
     width: 66%;
@@ -493,7 +452,6 @@ li{
     align-items: center;
     background: rgba(0, 0, 0, 0.787);
     overflow: hidden;
-    margin-bottom: 90px !important;
 }
   
 button {
@@ -521,7 +479,7 @@ button:focus {
     width: 100%;
     height: 100%;
     z-index: -5;
-    filter: blur(6px);
+    filter: blur(6px) saturate(0);
     pointer-events: none;
     user-select: none;
     overflow: hidden;
@@ -536,7 +494,7 @@ button:focus {
     height: 100%;
     background: #000000;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
   .app__bg__image {
@@ -748,6 +706,34 @@ button:focus {
       --card-height: 430px;
     }
   }
+
+
+
+/*Conoce tres*/
+.conoce-tres img{
+    width: 150px;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .5s ease;
+    transform: scale(1) rotate(0deg);
+}
+
+.conoce-tres img:hover{
+    background-color: #DFBEDD;
+    transform: scale(.97) rotate(180deg);
+}
+
+.caja-vetodos1{
+    position: relative;
+    bottom: 600px;
+}
+
+.caja-vetodos2{
+    position: relative;
+    bottom: 210px;
+}
 
 
 /*Contacto*/
@@ -1462,24 +1448,6 @@ footer p{
         width: 350px;
     }
 
-    /*Curriculum*/
-    .curri-tres{
-        display: none;
-    }
-
-    .curri-uno{
-        margin-bottom: 20px;
-    }
-
-    .curri-uno{
-        /*Cambiar por imagenes que encajen*/
-        background-image: url(../imagenes/curriculum1-remplazo.jpg);
-    }
-
-    .curri-dos{
-        background-image: url(../imagenes/curriculum2-remplazo.jpg);
-    }
-
     /*Footer*/
     footer h3{
         font-size: 50px;
@@ -1525,6 +1493,24 @@ footer p{
     /*Quien soy*/
     .quien-soy img{
         width: 150px;
+    }
+
+    /*Curriculum*/
+    .curri-tres{
+        display: none;
+    }
+
+    .curri-uno{
+        margin-bottom: 20px;
+    }
+
+    .curri-uno{
+        /*Cambiar por imagenes que encajen*/
+        background-image: url(../imagenes/home/curriculum2.jpg);
+    }
+
+    .curri-dos{
+        background-image: url(../imagenes/home/curriculum2-2.jpg);
     }
 
     /*Conoce*/
@@ -1607,19 +1593,21 @@ footer p{
         font-size: 11px;
     }
 
-    /*NavBar*/
-    .navbar .links, .contacto{
+    /*NavBar2*/
+    .navbar .contacto{
         display: none;
     }
 
-    .navbar .toggle_btn{
-        display: block;
+    .contacto-li{
+        display: inline-block;
     }
 
-    .dropdown_menu{
-        display: block;
+    .nav-item{
+        border-right: 0;
     }
-    /*Dropdown menú portafolio*/
+    .menu-nav-ablanco{
+        padding: 16px !important;
+    }
 
     /*Header*/
     .header-main{

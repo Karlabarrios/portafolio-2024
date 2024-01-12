@@ -21,69 +21,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-
     <!--Css Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Css Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--FancyBox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <!--AOS Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Css Propia-->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!--BarNav prueba-->
-    <nav class="navbar fixed-top">
+    <!--Last navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <div class="logo"><a href="index.html">KARLA BARRIOS</a></div>
-        <ul class="links">
-          <li><a href="sobre-mi">SOBRE MI</a></li>
-          <li><a href="cv">CV</a></li>
-          <!--Dropdown portafolio-->
-          <li class="dropdown">
-            <a class="nav-link dropdown-toggle none-border active portafolio-a" href="#" data-bs-toggle="dropdown">PORTFOLIO</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="portafolio.html">Ver todo</a></li>
-              <li><a class="dropdown-item" href="logos.html">Logos</a></li>
-              <li><a class="dropdown-item" href="branding.html">Branding</a></li>
-              <li><a class="dropdown-item" href="disenoweb.html">Diseño web</a></li>
-              <li><a class="dropdown-item" href="artes-redes.html">Artes</a></li>
-              <li><a class="dropdown-item" href="poster-design.html">Posters</a></li>
-              <li><a class="dropdown-item" href="ilustracion.html">Ilustración</a></li>
-            </ul>
-          </li>
-          <!--Si no funciona usar:-->
-          <!-- <li><a href="portafolio.html">PORTFOLIO</a></li> -->
-          <li class="recursos"><a href="recursos.html">RECURSOS</a></li>
-        </ul>
-        <a href="contacto" class="contacto">CONTACTO</a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i><!--fa-thin-->
+        <a class="navbar-brand" href="index.html">KARLA BARRIOS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-center" id="navbarsExample05">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-centro">
+            <li class="nav-item">
+              <a class="menu-nav-ablanco nav-link" href="index.html#quien-soy">SOBRE MI</a>
+            </li>
+            <li class="nav-item">
+              <a href="imagenes/home/cv-actual.pdf" data-fancybox data-caption="Curriculum 2024">CV</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="menu-nav-ablanco nav-link dropdown-toggle" href="portafolio.html" data-bs-toggle="dropdown">PORTAFOLIO</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="portafolio.html">Ver todo</a></li>
+                <li><a class="dropdown-item" href="logos.html">Logos</a></li>
+                <li><a class="dropdown-item" href="branding.html">Branding</a></li>
+                <li><a class="dropdown-item" href="disenoweb.html">Diseño web</a></li>
+                <li><a class="dropdown-item" href="artes-redes.html">Artes</a></li>
+                <li><a class="dropdown-item" href="poster-design.html">Posters</a></li>
+                <li><a class="dropdown-item" href="ilustracion.html">Ilustraciones</a></li>
+              </ul>
+            </li>
+            <li class="nav-item no-border-nav">
+              <a class="menu-nav-ablanco nav-link" href="recursos.html">RECURSOS</a>
+            </li>
+            <li class="nav-item contacto-li">
+              <a class="menu-nav-ablanco nav-link" href="index.html#contactame">CONTACTO</a>
+            </li>
+          </ul>
         </div>
+        <a class="contacto" href="index.html#contactame">CONTACTO</a>
       </div>
     </nav>
-
-    <div class="container-fluid dropdown_menu">
-      <li><a href="index.html">SOBRE MI</a></li>
-      <li><a href="cv">CV</a></li>
-      <!-- <li><a href="portafolio">PORTFOLIO</a></li> -->
-      <li class="dropdown">
-        <a class="nav-link dropdown-toggle none-border active portafolio-a" href="#" data-bs-toggle="dropdown">PORTFOLIO</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="portafolio.html">Ver todo</a></li>
-          <li><a class="dropdown-item" href="logos.html">Logos</a></li>
-          <li><a class="dropdown-item" href="branding.html">Branding</a></li>
-          <li><a class="dropdown-item" href="disenoweb.html">Diseño web</a></li>
-          <li><a class="dropdown-item" href="artes-redes.html">Artes</a></li>
-          <li><a class="dropdown-item" href="poster-design.html">Posters</a></li>
-          <li><a class="dropdown-item" href="ilustracion.html">Ilustración</a></li>
-        </ul>
-      </li>
-      <li><a href="recursos.html">RECURSOS</a></li>
-      <li><a href="contacto">CONTACTO</a></li> <!--class="contacto" maybe-->
-    </div>
 
 
     <!--ARTES PARA REDES-->
@@ -248,6 +239,20 @@
           ? 'fa-solid fa-xmark'
           : 'fa-solid fa-bars'
       }
+    </script>
+
+    <!--FancyBox-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+      // custom
+      });
+    </script>
+
+    <!--AOS Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
 </body>
