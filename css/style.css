@@ -24,7 +24,7 @@ h2{
 }
 
 h3{
-    font-size: 40px;
+    font-size: 46px;
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
     color: #000;
@@ -432,9 +432,20 @@ body{
 
 
 /*Section 5: Conoce 2*/
+/*Section 5: Conoce 2*/
+/*Section 5: Conoce 2*/
+.conoce-dos-sec i{
+    font-size: 32px;
+    color: #000;
+}
+
+.conoce-dos-sec .btn{
+    --bs-btn-padding-x: -0.25rem;
+}
+
 :root {
-    --card-width: 200px;
-    --card-height: 400px;
+    --card-width: 100px;
+    --card-height: 200px;
     --card-transition-duration: 800ms;
     --card-transition-easing: ease;
 }
@@ -492,7 +503,7 @@ button:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background: #000000;
+    background: #313131;
     z-index: 1;
     opacity: 0.7;
 }
@@ -531,7 +542,6 @@ button:focus {
     position: absolute;
     width: calc(3 * var(--card-width));
     height: auto;
-    /*Contenedor imagenes*/
   }
   .cardList__btn {
     --btn-size: 35px;
@@ -563,6 +573,7 @@ button:focus {
     perspective: 1000px;
   }
   
+    /*Contenedor imagenes*/  
   .card {
     --card-translateY-offset: 100vh;
     position: absolute;
@@ -574,6 +585,8 @@ button:focus {
     height: var(--card-height);
     transition: transform var(--card-transition-duration) var(--card-transition-easing);
     user-select: none;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 0 !important;
   }
   .card::before {
     content: "";
@@ -608,7 +621,7 @@ button:focus {
     --card-translateX-offset: 0;
     --card-rotation-offset: var(--current-card-rotation-offset);
     --card-scale-offset: 1.2;
-    --opacity: 0.8;
+    --opacity: 0.75;
   }
   .card.previous--card {
     --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
@@ -620,7 +633,7 @@ button:focus {
   }
   .card.previous--card, .card.next--card {
     --card-scale-offset: 0.9;
-    --opacity: 0.4;
+    --opacity: 0.5;
   }
   
   /*Texto*/
@@ -700,19 +713,47 @@ button:focus {
     display: none;
   }
   
-  @media only screen and (min-width: 800px) {
+@media only screen and (min-width: 870px) {
     :root {
       --card-width: 250px;
       --card-height: 430px;
     }
-  }
+}
+  
+@media (min-width: 700px) and (max-width: 870px) {
+    :root {
+      --card-width: 200px;
+      --card-height: 400px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    :root {
+      --card-width: 180px;
+      --card-height: 360px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    :root {
+      --card-width: 130px;
+      --card-height: 280px;
+    }
+}
+
+@media (max-width: 700px){
+    .conoce-dos-sec {
+        box-sizing: border-box;
+        height: 60vh;
+    }
+}
 
 
 
 /*Conoce tres*/
 .conoce-tres img{
     width: 150px;
-    background-color: white;
+    background-color: #DFBEDD;
     border: black 1px solid;
     border-radius: 50%;
     padding: 5px;
@@ -721,18 +762,13 @@ button:focus {
 }
 
 .conoce-tres img:hover{
-    background-color: #DFBEDD;
+    background-color: #fff;
     transform: scale(.97) rotate(180deg);
-}
-
-.caja-vetodos1{
-    position: relative;
-    bottom: 600px;
 }
 
 .caja-vetodos2{
     position: relative;
-    bottom: 210px;
+    bottom: 190px;
 }
 
 
@@ -742,7 +778,7 @@ button:focus {
 }
 
 .fondo-contactame{
-    background-color: white;
+    /* background-color: white; */
     border: solid 1px black;
     padding: 50px 0px;
     border-radius: 15px;
@@ -756,6 +792,7 @@ input{
     font-family: 'Martian Mono', monospace;
     color: black !important;
     font-size: 11px !important;
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 
 .form-control{
@@ -763,7 +800,7 @@ input{
     color: black !important;
 }
 
-button{
+.contactame button{
     background-color: black !important;
     color: white !important;
     font-family: 'Manrope', sans-serif;
@@ -926,7 +963,7 @@ footer p{
 .header-portafolio{
     background-color: #000;
     padding: 60px 0 40px;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 90px;
 }
 .header-portafolio h3{
@@ -953,7 +990,7 @@ footer p{
 
 /*Logos*/
 .logos{
-    padding: 90px 0;
+    padding: 90px 0 100px;
 }
 
 .logo-img{
@@ -979,7 +1016,7 @@ footer p{
 
 /*Branding*/
 .branding{
-    padding: 90px 0 30px;
+    padding: 100px 0 30px;
 }
 
 .branding-1-row{
@@ -1025,7 +1062,7 @@ footer p{
 
 /*Branding 2*/
 .branding-2{
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .brand-img{
@@ -1050,7 +1087,7 @@ footer p{
 
 /*Diseño web*/
 .diseno-web{
-    padding: 90px 0;
+    padding: 100px 0;
 }
 
 .diwe-img-1{
@@ -1106,7 +1143,7 @@ footer p{
 
 /*Artes para redes*/
 .artes{
-    padding: 90px 0;
+    padding: 100px 0;
 }
 
 .fila-artes{
@@ -1134,12 +1171,77 @@ footer p{
 
 /*Poster design*/
 .poster{
-    padding: 90px 0;
+    padding-top: 100px;
+}
+
+.poster h3{
+    margin-bottom: 0;
 }
 
 .dot-poster-design{
     width: 16px;
     vertical-align: middle;
+}
+
+
+/*Poster design 2*/
+.poster-dos-slider{
+    margin-bottom: 80px;
+}
+
+.poster-dos-slider i{
+    font-size: 32px;
+    color: #000;
+}
+
+.poster-dos-slider .btn{
+    --bs-btn-padding-x: -0.25rem;
+}
+  
+.poster-dos-slider {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+
+.poster-dos-slider .app__bg::before {
+    background: #ffffff00;
+}
+.poster-dos-slider .card.current--card {
+    --opacity: 1;
+}
+
+.poster-dos-slider .card.previous--card, .poster-dos-slider .card.next--card {
+    --opacity: 0.8;
+}
+
+
+/*Poster design 3*/
+.poster-boton-s3 img{
+    width: 150px;
+    background-color: #4165E3;
+    border: black 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all .5s ease;
+    transform: scale(1) rotate(0deg);
+}
+
+.poster-boton-s3 img:hover{
+    background-color: #fff;
+    transform: scale(.97) rotate(180deg);
+}
+
+.caja-posterbtn{
+    position: relative;
+    bottom: 190px;
 }
 
 
@@ -1410,6 +1512,9 @@ footer p{
 /* More than extra large devices (less than 1600px | for the silly rotting bubbles) */
 @media (max-width: 1600px) {
     /*Generales*/
+    h3{
+        font-size: 44px;
+    }
     /*Header*/
     .header-main{
         margin-top: -210px;
@@ -1434,6 +1539,12 @@ footer p{
 /* XXL-BOOTSTRAP*/
 @media (max-width: 1400px) {
     /*Generales*/
+    h3{
+        font-size: 42px;
+    }
+    p{
+        font-size: 12px;
+    }
     /*Header*/
     .header-main{
         margin-top: -150px
@@ -1448,13 +1559,35 @@ footer p{
         width: 350px;
     }
 
+    /*Conoce tres*/
+    .conoce-tres img{
+        width: 120px;
+    }
+    
+    .caja-vetodos2{
+        position: relative;
+        bottom: 60px;
+    }
+    
+    
     /*Footer*/
     footer h3{
         font-size: 50px;
     }
-
+    
     footer b{
         font-size: 46px;
+    }
+
+
+    /*Poster-boton-s3*/
+    .poster-boton-s3 img{
+        width: 120px;
+    }
+    
+    .caja-posterbtn{
+        position: relative;
+        bottom: 60px;
     }
 }
 
@@ -1477,11 +1610,7 @@ footer p{
 @media (max-width: 1200px) {
     /*Generales*/
     h3{
-        font-size: 36px;
-    }
-
-    p{
-        font-size: 12px;
+        font-size: 40px;
     }
 
     /*Header*/
@@ -1551,13 +1680,6 @@ footer p{
     }
     
     /*Footer*/
-    footer h3{
-        font-size: 50px;
-    }
-    
-    footer b{
-        font-size: 47px;
-    }
     
     .flecha{
         display: none;
@@ -1569,9 +1691,6 @@ footer p{
         margin-bottom: 140px;
     }
     
-    footer p{
-        font-size: 11px;
-    }
     
 }
 
@@ -1587,10 +1706,6 @@ footer p{
 
     h2{
         font-size: 48px;
-    }
-
-    p{
-        font-size: 11px;
     }
 
     /*NavBar2*/
@@ -1654,7 +1769,7 @@ footer p{
 
     /*Footer*/
     footer a{
-        font-size: 15px;
+        font-size: 17px;
     }
     /*Imágenes con col-6 que comparten 50% con otra col-6*/
     .col48-no50{
@@ -1669,21 +1784,26 @@ footer p{
 @media (max-width: 768px) {
     /*Generales*/
     h1{
-        font-size: 46px;
+        font-size: 50px;
         margin: 40px 0 52px;
     }
 
     h2{
-        font-size: 40px;
+        font-size: 44px;
     }
 
     h3{
-        font-size: 32px;
+        font-size: 35px;
     }
 
     /*Header*/
+    
+    header br{
+        display: none;
+    }
+
     header p{
-        font-size: 10px;
+        font-size: 12px;
         margin: 0;
     }
 
@@ -1720,35 +1840,25 @@ footer p{
     }
 
     /*Footer*/
-    footer h3{
-        font-size: 42px;
-    }
-
-    footer b{
-        font-size: 39px;
+    .links-footer{
+        text-align: center;
     }
 
     footer a{
-        font-size: 14px;
+        font-size: 20px;
     }
 
-    footer p{
-        font-size: 9px;
+    /*Portafolio diseño web*/
+    .diseno-web hr{
+        display: none;
     }
 }
 /* Less than 660px) */
 @media (max-width: 660px) {
     /*Generales*/
-    h1{
-        font-size: 38px;
-    }
-
-    h2{
-        font-size: 36px;
-    }
 
     p{
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 
@@ -1763,22 +1873,13 @@ footer p{
     }
 
     h2{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     h3{
-        font-size: 28px;
+        font-size: 32px;
     }
 
-    p{
-        font-size: 9px;
-    }
-
-    /*Dropdownmenú*/
-    /* .dropdown_menu{
-        left: 2rem;
-        width: unset;
-    } */
 
     /*Header*/
     header{
@@ -1791,9 +1892,6 @@ footer p{
         font-size: 11px;
     }
 
-    header br{
-        display: none;
-    }
 
     header p{
         font-size: 8px;
@@ -1812,34 +1910,22 @@ footer p{
 
     /*Footer*/
     footer h3{
-        font-size: 36px;
+        font-size: 42px;
     }
 
     footer b{
-        font-size: 33px;
+        font-size: 40px;
     }
 
-    footer a{
-        font-size: 12px;
-    }
 }
 /* Extra small devices (less than 375px) */
 @media (max-width: 375px) {
-    
-    /*Footer*/
     footer h3{
-        font-size: 34px;
+        font-size: 40px;
     }
 
     footer b{
-        font-size: 31px;
-    }
-
-    footer a{
-        font-size: 11px;
+        font-size: 38px;
     }
     
-    footer p{
-        font-size: 8px;
-    }
 }
