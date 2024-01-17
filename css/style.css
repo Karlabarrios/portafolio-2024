@@ -8,7 +8,7 @@ Azul: #4165E3*/
 
 /*Generales*/
 h1{
-    font-size: 66px;
+    font-size: 70px;
     font-family: 'Martian Mono', monospace;
     letter-spacing: -3px;
     font-weight: 700;
@@ -17,7 +17,7 @@ h1{
 }
 
 h2{
-    font-size: 54px;
+    font-size: 60px;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     color: #000;
@@ -154,6 +154,9 @@ body{
 
 
 /*Header*/
+.min-text-headermain{
+    display: none;
+}
 .header-main {
     margin: -230px 0 140px;
 }
@@ -171,8 +174,6 @@ body{
 }
 
 .header-main a{
-    /* color: black; */
-    /* border: 1px black solid; */
     color: #fff;
     text-align: center;
     background-color: black;
@@ -211,6 +212,10 @@ body{
     border: white 1px solid;
     border-radius: 50%;
     padding: 12px;
+}
+
+.linea-fst-hdr p{
+    margin-top: 4px;
 }
 
 /*Section 1: Hacerlo es posible*/
@@ -273,7 +278,7 @@ body{
 }
 
 .quien-soy h3{
-    margin: 60px 0 30px 0;
+    margin: 80px 0 30px 0;
 }
 
 .vidrio{
@@ -286,22 +291,6 @@ body{
 
 .quien-soy p{
     margin-bottom: 80px;
-}
-
-.quien-soy img{
-    background-color: #4165E3;
-    border-radius: 50%;
-    border: solid black 1px;
-    width: 160px;
-    margin-bottom: 100px;
-    padding: 5px;
-    transform: rotate(0deg);
-    transition: all .5s ease;
-}
-
-.quien-soy img:hover{
-    background-color: #DFBEDD;
-    transform: rotate(180deg) scale(1.1);
 }
 
 /*Section 3: Curriculum*/
@@ -750,7 +739,7 @@ button:focus {
     }
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     .conoce-dos-sec {
         box-sizing: border-box;
         height: 60vh;
@@ -821,7 +810,7 @@ input{
 
 /*Section 6: Social media*/
 .social-media{
-    padding: 90px 0 200px 0;
+    padding: 90px 0 160px 0;
 }
 
 .social-media h3{
@@ -830,7 +819,7 @@ input{
 
 .social-media b{
     font-family: 'Martian Mono', monospace;
-    font-size: 34px;
+    font-size: 43px;
     font-weight: 600;
     margin-top: 16px;
 }
@@ -967,6 +956,12 @@ footer p{
 }
 
 
+/*Might be GENERAL in all portfolio hover bttns*/
+.movgen-btn:hover{
+    transform: scale(1.02);
+}
+
+
 
 /*Portafolio Header*/
 .header-portafolio{
@@ -1097,6 +1092,10 @@ footer p{
 /*Diseño web*/
 .diseno-web{
     padding: 100px 0;
+}
+.diseno-web hr{
+    margin: 1.5rem 0;
+    opacity: 1;
 }
 
 .diwe-img-1{
@@ -1256,7 +1255,7 @@ footer p{
 
 /*Ilustraciones*/
 .ilustraciones{
-    padding: 90px 0 120px;
+    padding: 60px 0 120px;
 }
 
 .ilustracion-1{
@@ -1531,8 +1530,12 @@ footer p{
 /* More than extra large devices (less than 1600px | for the silly rotting bubbles) */
 @media (max-width: 1600px) {
     /*Generales*/
-    h3{
-        font-size: 44px;
+    h1{
+        font-size: 67px;
+    }
+    
+    h2{
+        font-size: 57px;
     }
     /*Header*/
     .header-main{
@@ -1559,8 +1562,9 @@ footer p{
 @media (max-width: 1400px) {
     /*Generales*/
     h3{
-        font-size: 42px;
+        font-size: 44px;
     }
+
     p{
         font-size: 12px;
     }
@@ -1586,6 +1590,19 @@ footer p{
     .caja-vetodos2{
         position: relative;
         bottom: 60px;
+    }
+
+    /*Redes sociales*/
+    .social-media br{
+        display: none;
+    }
+
+    .social-media b{
+        font-size: 41px;
+    }
+
+    .social-media h3{
+        text-align: center;
     }
     
     
@@ -1628,20 +1645,28 @@ footer p{
 /* XL-BOOTSTRAP*/
 @media (max-width: 1200px) {
     /*Generales*/
-    h3{
-        font-size: 40px;
+    h1{
+        font-size: 66px;
+        font-family: 'Martian Mono', monospace;
+        letter-spacing: -3px;
+        font-weight: 700;
+        color: #000;
+    }
+    
+    h2{
+        font-size: 54px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        color: #000;
     }
 
     /*Header*/
     .header-main a{
-        padding: 17px 70px;
+        padding: 17px 60px;
         font-size: 14px;
     }
 
     /*Quien soy*/
-    .quien-soy img{
-        width: 150px;
-    }
 
     /*Curriculum*/
     .curri-tres{
@@ -1667,21 +1692,9 @@ footer p{
     }
 
     /*Redes sociales*/
-    .social-media br{
-        display: none;
-    }
-
-    .social-media b{
-        font-size: 34px;
-    }
-
-    .social-media h3{
-        text-align: center;
-    }
 
 
     /*Recursos*/
-
     
 
     /*Portafolio diseño web*/
@@ -1699,7 +1712,6 @@ footer p{
     }
     
     /*Footer*/
-    
     .flecha{
         display: none;
     }
@@ -1709,24 +1721,21 @@ footer p{
         margin-top: 60px;
         margin-bottom: 140px;
     }
-    
-    
+}
+
+/* Header portfolio*/
+/* Header portfolio*/
+/* Header portfolio*/
+@media (max-width: 1099px){
+    .ultpro-3{
+        height: 260px;
+    }
 }
 
 /* Medium devices (less than 992px) LG-BOOTSTRAP */
 /* LG-BOOTSTRAP*/
 /* LG-BOOTSTRAP*/
 @media (max-width: 992px) {
-    /*Generales*/
-    h1{
-        font-size: 52px;
-        margin: 40px 0;
-    }
-
-    h2{
-        font-size: 48px;
-    }
-
     /*NavBar2*/
     .navbar .contacto{
         display: none;
@@ -1744,24 +1753,36 @@ footer p{
     }
 
     /*Header*/
-    .header-main{
-        margin-top: 270px;
-        margin-bottom: 220px;
+    h1{
+        margin-top: 0;
+        margin-bottom: 8px;
     }
 
+    .lg-text-headermain{
+        display: none;
+    }
+    
+    .min-text-headermain{
+        display: initial;
+    }
+
+    .btn-mainhead{
+        justify-content: center;
+    }
+    
+    .frase-hrmn{
+        display: inline;
+    }
+    
     .header-main p{
-        font-size: 10px;
         margin: 0;
     }
 
     .header-main a{
-        padding: 16px 66px;
         font-size: 14px;
     }
-
-    /*Quien soy*/
-    .quien-soy img{
-        width: 140px;
+    .min-text-headermain br{
+        display: none;
     }
 
     /*Hacerlo es posible*/
@@ -1776,6 +1797,30 @@ footer p{
     .marquee span.text {
         width: 230px;
         letter-spacing: 1px;
+    }
+
+    /*Curriculum*/  
+    .change-filter{
+        filter: saturate(1);
+    }
+    
+    .change-filter h3{
+        color: black;
+    }
+    .change-filter h4{
+        color: black;
+    }
+    
+    .change-filter a{
+        background-color: black;
+        border: solid black 1px !important;
+        color: white;
+        border: 0px;
+    }
+
+    /*Portafolio diseño web*/
+    .diseno-web hr{
+        display: none;
     }
 
     /*PORTAFOLIO Ilustraciones*/
@@ -1804,7 +1849,6 @@ footer p{
     /*Generales*/
     h1{
         font-size: 50px;
-        margin: 40px 0 52px;
     }
 
     h2{
@@ -1812,15 +1856,10 @@ footer p{
     }
 
     h3{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     /*Header*/
-    
-    header br{
-        display: none;
-    }
-
     header p{
         font-size: 12px;
         margin: 0;
@@ -1829,6 +1868,11 @@ footer p{
     .header-main a{
         padding: 15px 54px;
         font-size: 13px;
+        margin-top: 50px;
+    }
+
+    .header-main{
+        margin: 170px 0 100px;
     }
 
     /*Hacerlo es posible*/
@@ -1845,9 +1889,10 @@ footer p{
     }
 
     /*Quien soy*/
-    .quien-soy img{
-        width: 130px;
+    .quien-soy{
+        padding: 140px 10% 90px 10%;
     }
+    
 
     /*Social media*/
     .consulta-media{
@@ -1855,7 +1900,7 @@ footer p{
     }
 
     .social-media b{
-        font-size: 30px;
+        font-size: 37px;
     }
 
     /*Footer*/
@@ -1866,18 +1911,17 @@ footer p{
     footer a{
         font-size: 20px;
     }
-
-    /*Portafolio diseño web*/
-    .diseno-web hr{
-        display: none;
-    }
 }
 /* Less than 660px) */
 @media (max-width: 660px) {
     /*Generales*/
-
     p{
         font-size: 11px;
+    }
+
+    /*Conoce tres*/
+    .conoce-tres img{
+        width: 100px;
     }
 }
 
@@ -1888,63 +1932,103 @@ footer p{
 @media (max-width: 576px) {
     /*Generales*/
     h1{
-        margin: 35px 0 48px;
+        font-size: 46px;
     }
-
     h2{
-        font-size: 40px;
+        font-size: 36px;
     }
 
     h3{
-        font-size: 32px;
+        font-size: 36px;
     }
 
 
     /*Header*/
-    header{
-        margin-top: 250px;
-        margin-bottom: 200px;
+    .header-main{
+        margin: 140px 0 80px;
     }
-
     .header-main a{
-        padding: 15px 40px;
+        padding: 15px 34px;
         font-size: 11px;
+        margin-top: 30px;
     }
 
+    .min-text-headermain br{
+        display: initial;
+    }
 
     header p{
-        font-size: 8px;
+        font-size: 7px;
         margin: 0;
     }
 
     /*Quien soy*/
-    .quien-soy img{
-        width: 110px;
+    .quien-soy{
+        padding: 140px 5% 90px 5%;
+    }
+
+    /*Conoce tres*/
+    .conoce-tres img{
+        width: 80px;
+    }
+    .caja-vetodos2{
+        bottom: 40px;
     }
 
     /*Redes sociales*/
+    .social-media h3{
+        font-size: 33px;
+    }
     .social-media b{
-        font-size: 26px;
+        font-size: 30px;
     }
 
     /*Footer*/
     footer h3{
-        font-size: 42px;
+        font-size: 38px;
     }
 
     footer b{
-        font-size: 40px;
+        font-size: 36px;
+    }
+
+    footer a{
+        font-size: 16px;
+        margin-bottom: 34px;
     }
 
 }
 /* Extra small devices (less than 375px) */
 @media (max-width: 375px) {
+    /*Generales*/
+    h1{
+        font-size: 42px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    header p{
+        font-size: 6px;
+    }
+    
+    /*Redes sociales*/
+    .social-media h3{
+        font-size: 26px;
+    }
+    .social-media b{
+        font-size: 23px;
+    }
+
+    /*Footer*/
     footer h3{
-        font-size: 40px;
+        font-size: 34px;
     }
 
     footer b{
-        font-size: 38px;
+        font-size: 32px;
     }
     
 }
