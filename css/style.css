@@ -810,7 +810,7 @@ input{
 
 /*Section 6: Social media*/
 .social-media{
-    padding: 90px 0 160px 0;
+    padding: 90px 0 40px 0;
 }
 
 .social-media h3{
@@ -866,6 +866,7 @@ input{
 /*Footer*/
 footer{
     padding: 100px 0 50px;
+    margin-top: 120px;
     background-color: black;
     color: white;
 }
@@ -889,7 +890,7 @@ footer a{
 }
 
 footer a:hover{
-    color: #DFBEDD;
+    text-decoration: underline;
 }
 .dos-row{
     margin-top: 12px;
@@ -1176,6 +1177,27 @@ footer p{
     margin-top: 50px;
 }
 
+.artes-row a{
+    transition: all ease .7s;
+}
+
+.artes-row h6{
+    opacity: 0;
+    color: white;
+}
+
+.artes-row:hover h6{
+    opacity: 1;
+}
+
+.artes-row:hover img{
+    filter: brightness(.5);
+    transform: scale(.992);
+}
+
+.artes-row .proyect-text{
+    bottom: 4rem;
+}
 
 /*Poster design*/
 .poster{
@@ -1255,7 +1277,7 @@ footer p{
 
 /*Ilustraciones*/
 .ilustraciones{
-    padding: 60px 0 120px;
+    padding-top: 60px;
 }
 
 .ilustracion-1{
@@ -1311,13 +1333,38 @@ footer p{
     margin-bottom: 20px;
 }
 
-.vertical-texto{
+.vertical-texto1{
     writing-mode: vertical-lr;
     font-size: 40px;
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
     color: #000000;
+    display: flex;
     vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+
+.ilustraciones .col-1{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.vertical-texto2{
+    writing-mode: vertical-lr;
+    font-size: 40px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-bottom: 24px;
 }
 
 .ver-todos-ilustraciones a{
@@ -1517,6 +1564,102 @@ footer p{
 
 
 
+/*PÁGINAS DE PROYECTOSSS*/
+/*PÁGINAS DE PROYECTOSSS*/
+/*PÁGINAS DE PROYECTOSSS*/
+
+/*CONFIGURACIONES SIMILARES*/
+/*Boton genérico settings*/
+.boton-tipo1 a{
+    text-align: center;
+    color: white !important;
+    background-color: black;
+    border-radius: 15px;
+    padding: 18px 74px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 20px;
+}
+
+.proyectos-diseño{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+}
+
+.proyectos-diseño i{
+    font-size: 32px;
+}
+
+.proyectos-diseño h4{
+    font-size: 32px;
+}
+
+.proyectos-diseño-img1{
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: black solid 1px;
+}
+
+.proyectos-diseño-img2{
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: black solid 1px;
+    height: 420px;
+}
+
+.proyectos-diseño-img3{
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: black solid 1px;
+    height: 200px;
+}
+
+.proyectos-diseño-img4{
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: black solid 1px;
+    height: 200px;
+}
+
+/*PROYECTO PRUEBA*/
+
+.mimideath .proyectos-diseño-img1{
+    height: 580px;
+}
+
+.mimideath .tools{
+    font-size: 12px;
+    background-color: #d36ca3;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin-bottom: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.mimideath .color-project-1{
+    color: #010b11;
+}
+
+.mimideath .color-project-2{
+    color: #3c6174;
+}
+
+.mimideath .color-project-3{
+    color: #d36ca3;
+}
+
+.mimideath .color-project-4{
+    color: #e19ac0;
+}
+
 
 
 
@@ -1705,6 +1848,20 @@ footer p{
     .web-di-col2{
         text-align: center;
     }
+        
+    /*PORTAFOLIO Ilustraciones*/
+    .vertical-texto1{
+        display: none;
+    }
+    .vertical-texto2{
+        display: none;
+    }
+    .ver-todos-ilustraciones a{
+        display: inline-block;
+    }
+    .ilustraciones .col-1{
+        display: none;
+    }
 
     /*WEBFOLIO*/
     .webfolio{
@@ -1720,6 +1877,18 @@ footer p{
         top: 0px;
         margin-top: 60px;
         margin-bottom: 140px;
+    }
+
+    /*PROYECTOS*/
+    /*PROYECTOS*/
+    /*PROYECTOS*/
+
+    /*Mimideath*/
+    .mimideath{
+        text-align: center;
+    }
+    .proyectos-diseño-img2, .proyectos-diseño-img3{
+        margin-top: 20px;
     }
 }
 
@@ -1821,14 +1990,6 @@ footer p{
     /*Portafolio diseño web*/
     .diseno-web hr{
         display: none;
-    }
-
-    /*PORTAFOLIO Ilustraciones*/
-    .vertical-texto{
-        display: none;
-    }
-    .ver-todos-ilustraciones a{
-        display: inline-block;
     }
 
     /*Footer*/
@@ -1995,6 +2156,15 @@ footer p{
     footer a{
         font-size: 16px;
         margin-bottom: 34px;
+    }
+
+    /*PROYECTOS*/
+    /*PROYECTOS*/
+    /*PROYECTOS*/
+
+    /*Mimideath*/
+    .proyectos-diseño-img3{
+        margin-top: 0;
     }
 
 }
