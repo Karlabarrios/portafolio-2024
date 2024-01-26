@@ -220,7 +220,7 @@ body{
 
 /*Section 1: Hacerlo es posible*/
 .hacerlo-posible hr{
-    border: solid black -5px !important;
+    border: solid black -5px;
     opacity: 1;
 }
 
@@ -402,7 +402,7 @@ body{
 }
 
 .conoce hr{
-    border: solid black -5px !important;
+    border: solid black -5px;
     opacity: 1;
     margin: 0;
     width: 66%;
@@ -906,7 +906,7 @@ footer img{
 }
 
 footer hr{
-    border: solid white -5px !important;
+    border: solid white -5px;
     opacity: 1;
     margin: 0;
 }
@@ -1254,24 +1254,8 @@ footer p{
 
 
 /*Poster design 3*/
-.poster-boton-s3 img{
-    width: 150px;
+.conoce-tres-poster img{
     background-color: #4165E3;
-    border: black 1px solid;
-    border-radius: 50%;
-    padding: 5px;
-    transition: all .5s ease;
-    transform: scale(1) rotate(0deg);
-}
-
-.poster-boton-s3 img:hover{
-    background-color: #fff;
-    transform: scale(.97) rotate(180deg);
-}
-
-.caja-posterbtn{
-    position: relative;
-    bottom: 190px;
 }
 
 
@@ -1992,6 +1976,14 @@ footer p{
         display: none;
     }
 
+    /*Portafolio poster*/
+    .poster-title{
+        margin-bottom: -50px;
+    }
+    .conoce-tres-poster{
+        margin-top: -60px;
+    }
+
     /*Footer*/
     footer a{
         font-size: 17px;
@@ -2072,7 +2064,11 @@ footer p{
     footer a{
         font-size: 20px;
     }
+
+    /*Portafolio poster*/
 }
+
+
 /* Less than 660px) */
 @media (max-width: 660px) {
     /*Generales*/
@@ -2083,6 +2079,23 @@ footer p{
     /*Conoce tres*/
     .conoce-tres img{
         width: 100px;
+    }
+}
+/* Para section poster en portfolio) */
+@media (max-width: 600px) {
+    .poster-title{
+        margin-bottom: -120px;
+    }
+    .conoce-tres-poster{
+        margin-top: -130px;
+    }
+}
+@media (max-width: 500px) {
+    .poster-title{
+        margin-bottom: -200px;
+    }
+    .conoce-tres-poster{
+        margin-top: -190px;
     }
 }
 
