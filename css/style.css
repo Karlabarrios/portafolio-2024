@@ -1738,6 +1738,7 @@ footer p{
     border-radius: 15px;
     width: 100%;
     object-fit: cover;
+    height: 480px;
 }
 
 .ver-todos-brand a{
@@ -2279,6 +2280,14 @@ footer p{
     height: 200px;
 }
 
+.proyectos-diseño-img5{
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: black solid 1px;
+    height: 420px;
+}
+
 .tools{
     font-size: 12px;
     border-radius: 15px;
@@ -2476,6 +2485,50 @@ footer p{
 
 .calaveritapop-pro .color-project-4{
     color: #cca717;
+}
+
+
+/*ANATEMA CINEMA*/
+.anatema-pro .tools{
+    background-color: #EB3D00;
+}
+
+.anatema-pro .color-project-1{
+    color: #162114;
+}
+
+.anatema-pro .color-project-2{
+    color: #294122;
+}
+
+.anatema-pro .color-project-3{
+    color: #FFF0D2;
+}
+
+.anatema-pro .color-project-4{
+    color: #EB3D00;
+}
+
+
+/*NOVA PHARMACY*/
+.novapharma-pro .tools{
+    background-color: #00D300;
+}
+
+.novapharma-pro .color-project-1{
+    color: #007E84;
+}
+
+.novapharma-pro .color-project-2{
+    color: #00B2C0;
+}
+
+.novapharma-pro .color-project-3{
+    color: #72E0D3;
+}
+
+.novapharma-pro .color-project-4{
+    color: #00D300;
 }
 
 
@@ -2702,23 +2755,24 @@ footer p{
     /*PROYECTOS*/
     /*PROYECTOS*/
     /*PROYECTOS*/
+    
+    /*General in all projects*/
+    .proyectos-diseño-img2, .proyectos-diseño-img3{
+        margin-top: 20px;
+    }
+
+    .proyectos-diseño{
+        text-align: center;
+    }
+
 
     /*Mimideath*/
     .mimideath{
         text-align: center;
     }
-    .proyectos-diseño-img2, .proyectos-diseño-img3{
-        margin-top: 20px;
-    }
 
-    /*Wonderskin*/
-    .wonderskinpro{
-        text-align: center;
-    }
-    /*Running club*/
-    .runningclub-pro{
-        text-align: center;
-    }
+
+
 }
 
 /* Header portfolio*/
